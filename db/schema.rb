@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150902050150) do
+||||||| merged common ancestors
+ActiveRecord::Schema.define(version: 20150902044545) do
+=======
+ActiveRecord::Schema.define(version: 20150902050017) do
+>>>>>>> 40755b9188c4a1c86d7119090d9fa83ae839f7f9
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,7 +51,9 @@ ActiveRecord::Schema.define(version: 20150902050150) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "avatar"
   end
+<<<<<<< HEAD
 
   create_table "faculties", force: :cascade do |t|
     t.text     "full_name"
@@ -55,4 +63,15 @@ ActiveRecord::Schema.define(version: 20150902050150) do
     t.string   "avatar"
   end
 
+||||||| merged common ancestors
+=======
+
+  create_table "faculties", force: :cascade do |t|
+    t.text     "full_name"
+    t.text     "bio"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+>>>>>>> 40755b9188c4a1c86d7119090d9fa83ae839f7f9
 end
