@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 	#Casein routes
 	namespace :casein do
 		resources :faculties
+		resources :events
 	end
 
   # The priority is based upon order of creation: first created -> highest priority.
