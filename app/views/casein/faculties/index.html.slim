@@ -1,0 +1,9 @@
+h2
+  | Faculties
+  = casein_pagination_details @faculties
+= render :partial => 'casein/faculties/table', :locals => { :faculties => @faculties }
+.text-center
+  = will_paginate @faculties
+= content_for :sidebar do
+  li
+    = link_to "#{casein_show_icon "plus-sign"}Add a new faculty".html_safe, new_casein_faculty_path
