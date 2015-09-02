@@ -3,7 +3,7 @@ class CreateFaculties < ActiveRecord::Migration
     create_table :faculties do |t|
       t.text :full_name
       t.text :bio
-      
+
       t.timestamps
     end
   end

@@ -24,7 +24,7 @@ module Casein
 
     def create
       @faculty = Faculty.new faculty_params
-    
+      binding.pry
       if @faculty.save
         flash[:notice] = 'Faculty created'
         redirect_to casein_faculties_path
@@ -59,7 +59,7 @@ module Casein
     private
       
       def faculty_params
-        params.require(:faculty).permit(:full_name, :bio)
+        params.require(:faculty).permit(:full_name, :bio, :avatar)
       end
 
   end
