@@ -1,6 +1,9 @@
 class DanzaDecorator < Draper::Decorator
   delegate_all
-
+  decorates_finders
+  def full_name
+    model.full_name
+  end
   # Define presentation-specific methods here. Helpers are accessed through
   # `helpers` (aka `h`). You can override attributes, for example:
   #

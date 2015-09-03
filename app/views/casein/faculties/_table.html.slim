@@ -6,12 +6,14 @@ table.table.table-striped.table-hover.table-condensed
       th
         = casein_sort_link "Bio", :bio
       th
-        |  
+        = casein_sort_link 'avatar', :avatar
   - faculties.each do |faculty|
     tr
       td
         = casein_table_cell_link faculty.full_name, casein_faculty_path(faculty)
       td
         = casein_table_cell_link faculty.bio, casein_faculty_path(faculty)
+      td
+        = casein_table_cell_link faculty.avatar, casein_faculty_path(faculty)
       td.delete
         = link_to(casein_show_row_icon("trash"), casein_faculty_path(faculty), :method => :delete, :data => { :confirm => "Are you sure you want to delete this faculty?" })

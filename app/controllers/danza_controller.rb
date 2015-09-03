@@ -1,7 +1,7 @@
 class DanzaController < ApplicationController
   def about
     @faculty = Faculty.all
-    # binding.pry
+    # @faculty = DanzaDecorator.new(faculty)
   end
   def schedule
     @events = Event.all
