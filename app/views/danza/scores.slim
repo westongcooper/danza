@@ -1,7 +1,7 @@
-h2 Schedule Page
+h2 Scores page
 .events
   - @events.each do |e|
-    - if e.date > DateTime.now
+    - if e.date <= DateTime.now
       .event
         ul
           li
