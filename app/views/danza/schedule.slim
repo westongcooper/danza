@@ -1,0 +1,19 @@
+h2 Schedule Page
+.events
+  - @events.each do |e|
+    .event
+      ul
+        li
+          h4.evntName
+            = e.name
+        li
+          p.evntAddr
+            = e.address
+        li
+          p.evntDate
+            = e.date
+        li
+          p.evntDes
+            = e.description
+        li
+            = image_tag(e.avatar, alt: "Continue")
