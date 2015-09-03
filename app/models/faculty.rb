@@ -1,4 +1,4 @@
   require 'carrierwave/orm/activerecord'
 class Faculty < ActiveRecord::Base
-  mount_uploader :avatars, AvatarUploader
+  mount_uploader :avatar, AvatarUploader
 end
