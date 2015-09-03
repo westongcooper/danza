@@ -24,9 +24,10 @@ module Casein
 
     def create
       @event = Event.new event_params
+      @event.avatar = params[file]
       if @event.save
         flash[:notice] = 'Event created'
-        binding.pry
+        # binding.pry
         redirect_to casein_events_path
       else
         flash.now[:warning] = 'There were problems when trying to create a new event'
