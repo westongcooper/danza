@@ -1,0 +1,16 @@
+h2 About Page
+- @faculty.each do |f|
+  .faculty
+    h5.full_name
+      |Name
+    = f.full_name
+    h5.bio
+      |Bio
+    = f.bio
+    br
+
+
+/- content_for @faculty do | f |
+    = binding.pry
+/h3
+  /= @faculty.take.to_json

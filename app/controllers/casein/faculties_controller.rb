@@ -24,7 +24,6 @@ module Casein
 
     def create
       @faculty = Faculty.new faculty_params
-      binding.pry
       if @faculty.save
         flash[:notice] = 'Faculty created'
         redirect_to casein_faculties_path

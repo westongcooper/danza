@@ -33,6 +33,7 @@ gem 'casein'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'slim-rails'
+gem 'draper', '~> 1.3'
 group :development, :test do
   # Call 'byebug' anywhere in thegit code to stop execution and get a debugger console
   gem 'pry'

@@ -1,0 +1,37 @@
+                           Prefix Verb   URI Pattern                                       Controller#Action
+                 casein_faculties GET    /casein/faculties(.:format)                       casein/faculties#index
+                                  POST   /casein/faculties(.:format)                       casein/faculties#create
+               new_casein_faculty GET    /casein/faculties/new(.:format)                   casein/faculties#new
+              edit_casein_faculty GET    /casein/faculties/:id/edit(.:format)              casein/faculties#edit
+                   casein_faculty GET    /casein/faculties/:id(.:format)                   casein/faculties#show
+                                  PATCH  /casein/faculties/:id(.:format)                   casein/faculties#update
+                                  PUT    /casein/faculties/:id(.:format)                   casein/faculties#update
+                                  DELETE /casein/faculties/:id(.:format)                   casein/faculties#destroy
+                    casein_events GET    /casein/events(.:format)                          casein/events#index
+                                  POST   /casein/events(.:format)                          casein/events#create
+                 new_casein_event GET    /casein/events/new(.:format)                      casein/events#new
+                edit_casein_event GET    /casein/events/:id/edit(.:format)                 casein/events#edit
+                     casein_event GET    /casein/events/:id(.:format)                      casein/events#show
+                                  PATCH  /casein/events/:id(.:format)                      casein/events#update
+                                  PUT    /casein/events/:id(.:format)                      casein/events#update
+                                  DELETE /casein/events/:id(.:format)                      casein/events#destroy
+                            admin GET    /admin(.:format)                                  redirect(301, /casein)
+update_password_casein_admin_user PATCH  /casein/admin_users/:id/update_password(.:format) casein/admin_users#update_password
+ reset_password_casein_admin_user PATCH  /casein/admin_users/:id/reset_password(.:format)  casein/admin_users#reset_password
+               casein_admin_users GET    /casein/admin_users(.:format)                     casein/admin_users#index
+                                  POST   /casein/admin_users(.:format)                     casein/admin_users#create
+            new_casein_admin_user GET    /casein/admin_users/new(.:format)                 casein/admin_users#new
+           edit_casein_admin_user GET    /casein/admin_users/:id/edit(.:format)            casein/admin_users#edit
+                casein_admin_user GET    /casein/admin_users/:id(.:format)                 casein/admin_users#show
+                                  PATCH  /casein/admin_users/:id(.:format)                 casein/admin_users#update
+                                  PUT    /casein/admin_users/:id(.:format)                 casein/admin_users#update
+                                  DELETE /casein/admin_users/:id(.:format)                 casein/admin_users#destroy
+        casein_admin_user_session POST   /casein/admin_user_session(.:format)              casein/admin_user_sessions#create
+    new_casein_admin_user_session GET    /casein/admin_user_session/new(.:format)          casein/admin_user_sessions#new
+                                  DELETE /casein/admin_user_session(.:format)              casein/admin_user_sessions#destroy
+            casein_password_reset POST   /casein/password_reset(.:format)                  casein/password_resets#create
+       edit_casein_password_reset GET    /casein/password_reset/edit(.:format)             casein/password_resets#edit
+                                  PATCH  /casein/password_reset(.:format)                  casein/password_resets#update
+                                  PUT    /casein/password_reset(.:format)                  casein/password_resets#update
+                     casein_blank GET    /casein/blank(.:format)                           casein/casein#blank
+                      casein_root GET    /casein(.:format)                                 casein/casein#index
