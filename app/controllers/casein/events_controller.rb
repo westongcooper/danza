@@ -24,7 +24,7 @@ module Casein
 
     def create
       @event = Event.new event_params
-      @event.avatar = params[:file]
+
       if @event.save
         flash[:notice] = 'Event created'
         # binding.pry
