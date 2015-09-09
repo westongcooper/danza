@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+  //console.log('fuck yea');
+  $(".button-collapse").sideNav();
+  $('.parallax').parallax();
+});

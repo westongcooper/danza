@@ -13,7 +13,9 @@ before_action :set_event, only: [:scores, :schedule, :pictures]
 
   def pictures
   end
-
+  def landing
+    
+  end
   private
 
   def set_event
