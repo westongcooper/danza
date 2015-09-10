@@ -8,7 +8,15 @@
   right: 0;
   top: 10vh;
   color:white;
+  margin:0 auto;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src:font-url('GothamHTF-Medium.ttf') format("truetype");
+}
+h2{
+  font-family: 'Gotham',sans-serif;
   text-align: center;
   font-size: 30px;
-
 }

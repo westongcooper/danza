@@ -5,9 +5,10 @@ Rails.application.routes.draw do
 		resources :faculties
 		resources :events
   end
-  get '/about' => 'danza#about'
-  get '/schedule' => 'danza#schedule'
-  get '/scores' => 'danza#scores'
+  get '/about' => 'danza#about', as: 'about'
+  get '/schedule' => 'danza#schedule', as: 'schedule'
+  get '/scores' => 'danza#scores', as: 'scores'
+  get '/registration' => 'danza#registration', as: 'registration'
   root 'danza#landing'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

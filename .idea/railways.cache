@@ -17,6 +17,7 @@
                                   DELETE /casein/events/:id(.:format)                      casein/events#destroy
                             about GET    /about(.:format)                                  danza#about
                          schedule GET    /schedule(.:format)                               danza#schedule
+                           scores GET    /scores(.:format)                                 danza#scores
                             admin GET    /admin(.:format)                                  redirect(301, /casein)
 update_password_casein_admin_user PATCH  /casein/admin_users/:id/update_password(.:format) casein/admin_users#update_password
  reset_password_casein_admin_user PATCH  /casein/admin_users/:id/reset_password(.:format)  casein/admin_users#reset_password
