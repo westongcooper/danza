@@ -15,8 +15,10 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
-  //console.log('fuck yea');
+function start_js() {
+  console.log('fuck yea');
   $(".button-collapse").sideNav();
   $('.parallax').parallax();
-});
+}
+
+$(document).on('ready page:load', start_js);
