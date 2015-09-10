@@ -1,8 +1,15 @@
-
+@font-face {
+  font-family: 'GothamThin';
+  src:url('../font/GothamHTF-Thin.ttf')  format('truetype');
+}
 
 //  Schedule Styling
-//
-//   .event is Div containing ul
+
+
+body{
+  background-color: #121212;
+}
+
 .event li{
   display: inline-block;
 }
@@ -12,7 +19,7 @@
 }
 
 .evntAddr{
-
+  font-weight: 300;
 }
 
 .evntDate{
@@ -20,9 +27,22 @@
 }
 
 .evntDes{
-
 }
 
 .evntImg{
 
+}
+
+p.col.s9{
+  // font-family: 'GothamThin', cursive;
+  font-weight: 100;
+
+}
+
+.schedTit{
+  text-align: center;
+}
+
+.card{
+  // background-color: red;
 }

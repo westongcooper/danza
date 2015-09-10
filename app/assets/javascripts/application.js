@@ -19,4 +19,5 @@ $(document).ready(function(){
   //console.log('fuck yea');
   $(".button-collapse").sideNav();
   $('.parallax').parallax();
+  $('.modal-trigger').leanModal();
 });
