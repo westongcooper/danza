@@ -1,6 +1,19 @@
 // Place all the styles related to the danza controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ---------FONTS---------------
+@font-face {
+  font-family: "Gotham";
+  src:font-url('GothamHTF-Medium.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'GothamThin';
+  src:font-url('GothamHTF-Thin.ttf')  format('truetype');
+}
+
+// ------------------------------
+
 .landing_t{
   // position:absolute;
   position: absolute;
@@ -11,10 +24,8 @@
   margin:0 auto;
 }
 
-@font-face {
-  font-family: "Gotham";
-  src:font-url('GothamHTF-Medium.ttf') format("truetype");
-}
+
+
 h2{
   font-family: 'Gotham',sans-serif;
   text-align: center;

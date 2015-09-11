@@ -1,0 +1,63 @@
+
+
+
+#schImg{
+  margin-top: 64;
+  height: 75vh;
+  width: 100%;
+  background: url("https://c1.staticflickr.com/9/8386/8594509864_10caebb1ca_b.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: black 0px 5px 5px !important;
+
+}
+
+.layer1{
+  height: 100%;
+  width: 104%;
+  background-color: black;
+  opacity: .3;
+  margin-left: -2%;
+}
+
+.schTitle {
+  font-family: 'Gotham',sans-serif;
+  font-size: 16vh;
+  z-index: 200;
+  color: white;
+  text-shadow: black 2px 5px 5px !important;
+  // position: absolute;
+}
+
+
+#evtDesc{
+  color: white;
+  font-family: 'GothamThin',sans-serif;
+  font-size: 15px;
+
+}
+
+#evtDate {
+  color: #a1a1a1;
+  font-weight: 300px;
+  font-size: 13px;
+}
+
+#evtAddress {
+  color: #d5d5d5;
+  font-weight: 300px;
+  font-family: 'Gotham',sans-serif;
+  font-size: 10px;
+}
+
+
+
+.redBorder{
+  border: 2px solid red;
+}
+
+// #schedList{
+//   position: fixed;
+//   top: 90px;
+//   width: 20%;
+// }
