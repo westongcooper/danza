@@ -40,13 +40,6 @@ function start_js() {
         }
     });
 
-  $(".nav ul li a").click(function() {
-      $(this).css({
-        'background-color' : 'white',
-        'font-weight' : 'bolder'
-      });
-
-  });
 
 
 

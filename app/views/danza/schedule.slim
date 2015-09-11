@@ -14,30 +14,32 @@
 .row.container
   .col.l8.m9.s12
     - @events.each do |e|
-      .card.small.col.s12.event.grey.darken-4.hoverable id="eventCard"
-        a.waves-effect.modal-trigger href="#modal1"
-          .card-image id="cardImg"
-            / img src="http://dancified.com/wp-content/uploads/2014/09/dance-colour.jpg"\
-            = image_tag(e.avatar, alt: "Continue")
-          .card-content
-            p.col.s8.right.center id="evtDesc"
-              / THIS SECTION MUST BE SHORTER THAN 1350 CHARACTERS
-              / | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. hahhah a h hah a ha ha.
-              = truncate(e.description, length: 150)
-            .cardContext.left.col.s4.center
-              span.card-title.grey-text.text-darken-4
-                h5.white-text.evtName
-                  = e.name
-              p id="evtDate"
-                = e.date.strftime("%b %e, %Y  %l:%M")
-              p id="evtAddress"
-                / |123 Martin King Jr. Blvd 33131 Miami, Florida
-                = e.address
+      - if e.date > DateTime.now
+        .card.small.col.s12.event.grey.darken-4.hoverable id="eventCard"
+          a.waves-effect.modal-trigger href="#modal1"
+            .card-image id="cardImg"
+              / img src="http://dancified.com/wp-content/uploads/2014/09/dance-colour.jpg"\
+              = image_tag(e.avatar, alt: "Continue")
+            .card-content
+              p.col.s8.right.center id="evtDesc"
+                / THIS SECTION MUST BE SHORTER THAN 1350 CHARACTERS
+                / | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. hahhah a h hah a ha ha.
+                = truncate(e.description, length: 150)
+              .cardContext.left.col.s4.center
+                span.card-title.grey-text.text-darken-4
+                  h5.white-text.evtName
+                    = e.name
+                p id="evtDate"
+                  = e.date.strftime("%b %e, %Y  %l:%M")
+                p id="evtAddress"
+                  / |123 Martin King Jr. Blvd 33131 Miami, Florida
+                  = e.address
   .col.l4.m3.hide-on-small-only
     div id="schedList"
       ul.collection.row.with-header
         li.collection-header.center EVENTS
         - @events.each do |e|
+          - if e.date > DateTime.now
             li
               a.collection-item.col.s12.modal-trigger id="pinItem" href="#modal1"
                 div.col.s8
@@ -50,7 +52,7 @@
 #modal1.modal.modal-fixed-footer
   .modal-content
     h4.modalTit.grey-text.text-darken-4 Title
-    p.grey-text.text-darken-3 NEEED TO ADD THE INFO BUT NOT SURE HOW TO PUT THE CORRECT INFOR HERE.....
+    p.grey-text.text-darken-2 NEEED TO ADD THE INFO BUT NOT SURE HOW TO PUT THE CORRECT INFOR HERE.....
   .modal-footer
     a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
       / i.fa.fa-times.fa-2x
