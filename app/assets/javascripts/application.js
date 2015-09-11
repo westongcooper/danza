@@ -34,34 +34,23 @@ function start_js() {
   var scrollOffset = $("#schedList").offset().top;
     $(window).scroll(function(){
         var scrollPos = $(window).scrollTop();
-        if (scrollPos >= (scrollOffset-68)) {
+        if (scrollPos >= (scrollOffset)) {
           $("#schedList").addClass("fixedPin");
         } else {
           $("#schedList").removeClass("fixedPin");
         }
     });
 
+  $(".nav ul li a").click(function() {
+      $(this).css({
+        'background-color' : 'white',
+        'font-weight' : 'bolder'
+      });
 
-
-  // 681.26416015625
+  });
 
 
 
 }
 
 $(document).on('ready page:load', start_js);
-
-// function sticky_relocate() {
-//     var window_top = $(window).scrollTop();
-//     var div_top = $('#navBarSticky').offset().top;
-//     if (window_top > div_top) {
-//         $('#schedList').addClass('stick');
-//     } else {
-//         $('#schedList').removeClass('stick');
-//     }
-// }
-//
-// $(function () {
-//     $(window).scroll(sticky_relocate);
-//     sticky_relocate();
-// });
