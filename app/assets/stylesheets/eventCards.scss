@@ -53,12 +53,16 @@
 
 .evtName {
   margin-top: -5px;
-  font-size: 1em;
+  font-size: .9em;
 }
 
+.collection-header{
+  color: #242424;
+
+}
 
 .redBorder{
-  border: 2px solid red;
+  box-shadow: red 0px 0px 10px !important;
 }
 
 .fixedPin{
@@ -67,7 +71,21 @@
   width: 22%!important;
 }
 
-#pinTitle{
+#pinItem p{
   color: black;
-  font-weight: 600;
+  font-family: 'GothamThin',sans-serif;
 }
+
+#pinItem:hover #pinTitle{
+  color: red;
+  font-family: 'GothamThin',sans-serif;
+}
+#pinItem:hover #pinDate{
+  color: red;
+  font-family: 'GothamThin',sans-serif;
+}
+
+// #pinDate {
+//   font-family: 'GothamThin',sans-serif;
+//   color: black;
+// }

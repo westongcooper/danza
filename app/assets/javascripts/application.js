@@ -23,12 +23,11 @@ function start_js() {
 
 //    Hover for Cards
   $('.card.small').mouseenter(function() {
-      $(this).addClass("redBorder", 5000);
+    $(this).addClass('redBorder',400);
   });
   $('.card.small').mouseleave(function() {
-      $(this).removeClass("redBorder", 5000);
+    $(this).removeClass('redBorder',400);
   });
-
 //    Fixing the Schedule
 
   var scrollOffset = $("#schedList").offset().top;

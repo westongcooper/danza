@@ -35,15 +35,17 @@
                 = e.address
   .col.l4.m3.hide-on-small-only
     div id="schedList"
-      ul.collection.row
+      ul.collection.row.with-header
+        li.collection-header.center EVENTS
         - @events.each do |e|
-          a.collection-item.col.s12.modal-trigger href="#modal1"
-            div.col.s8
-              p.fixedEvtName id="pinTitle"
-                  = e.name
-            div.col.s4
-              p.fixedEvtName
-                = e.date.strftime("%m-%e-%y")
+            li
+              a.collection-item.col.s12.modal-trigger id="pinItem" href="#modal1"
+                div.col.s8
+                  p.fixedEvtName id="pinTitle"
+                      = e.name
+                div.col.s4
+                  p.fixedEvtName id="pinDate"
+                    = e.date.strftime("%m-%e-%y")
 
 #modal1.modal.modal-fixed-footer
   .modal-content
