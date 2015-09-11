@@ -37,11 +37,13 @@
     div id="schedList"
       ul.collection.row
         - @events.each do |e|
-          a.collection-item.col.s12
-            p.fixedEvtName
-              = e.name
-            span.fixedEvtDate
-              = e.date.strftime("%A, %d %b %Y %l:%M %p")
+          a.collection-item.col.s12.modal-trigger href="#modal1"
+            div.col.s6
+              p.fixedEvtName id="pinTitle"
+                  = e.name
+            div.col.s6
+              p.fixedEvtName
+                = e.date.strftime("%A, %d %b %Y")
 
 #modal1.modal.modal-fixed-footer
   .modal-content
