@@ -1,5 +1,5 @@
 class DanzaController < ApplicationController
-before_action :set_event, only: [:scores, :schedule, :pictures]
+before_action :set_event, only: [:schedule, :pictures]
 
   def about
     @faculty = Faculty.all
@@ -9,6 +9,7 @@ before_action :set_event, only: [:scores, :schedule, :pictures]
   end
 
   def scores
+    @events = Event.all.order("date DESC")
   end
 
   def pictures
@@ -22,6 +23,6 @@ before_action :set_event, only: [:scores, :schedule, :pictures]
   private
 
   def set_event
-    @events = Event.all
+    @events = Event.all.order("date")
   end
 end
