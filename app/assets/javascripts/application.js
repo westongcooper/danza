@@ -22,6 +22,7 @@ function start_js() {
   $('.parallax').parallax();
   $('.modal-trigger').leanModal();
 
+//    Hover for Cards
   $('.card.small').mouseenter(function() {
       $(this).addClass("redBorder", 5000);
   });

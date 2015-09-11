@@ -1,5 +1,5 @@
 class DanzaController < ApplicationController
-before_action :set_event, only: [:schedule, :pictures]
+before_action :set_event, only: [:schedule, :pictures, :landing]
 
   def about
     @faculty = Faculty.all
