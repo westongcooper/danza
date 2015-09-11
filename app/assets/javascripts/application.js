@@ -17,7 +17,6 @@
 
 
 function start_js() {
-  console.log('fuck yea');
   $(".button-collapse").sideNav();
   $('.parallax').parallax();
   $('.modal-trigger').leanModal();
@@ -29,6 +28,25 @@ function start_js() {
   $('.card.small').mouseleave(function() {
       $(this).removeClass("redBorder", 5000);
   });
+
+//    Fixing the Schedule
+
+  var scrollOffset = $("#schedList").offset().top;
+    $(window).scroll(function(){
+        var scrollPos = $(window).scrollTop();
+        if (scrollPos >= (scrollOffset-68)) {
+          $("#schedList").addClass("fixedPin");
+        } else {
+          $("#schedList").removeClass("fixedPin");
+        }
+    });
+
+
+
+  // 681.26416015625
+
+
+
 }
 
 $(document).on('ready page:load', start_js);

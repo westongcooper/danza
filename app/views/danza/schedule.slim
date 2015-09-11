@@ -3,7 +3,10 @@
 
 .row.container
   .leadImg.col.12 id="schImg"
-    p.schTitle.center Upcoming Events
+    p.schTitle.center
+      |Upcoming
+      br
+      |Events
     / .layer1
 
 
@@ -20,7 +23,7 @@
             p.col.s8.right.center id="evtDesc"
               / THIS SECTION MUST BE SHORTER THAN 1350 CHARACTERS
               / | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. hahhah a h hah a ha ha.
-              = truncate(e.description, length: 280)
+              = truncate(e.description, length: 270)
             .cardContext.left.col.s4.center
               span.card-title.grey-text.text-darken-4
                 h5.white-text.evtName
@@ -31,13 +34,14 @@
                 / |123 Martin King Jr. Blvd 33131 Miami, Florida
                 = e.address
   .col.s4
-    ul.collection id="schedList"
-      - @events.each do |e|
-        a.collection-item.col.s12
-          p.fixedEvtName
-            = e.name
-          span.fixedEvtDate
-            = e.date.strftime("%A, %d %b %Y %l:%M %p")
+    div id="schedList"
+      ul.collection.row
+        - @events.each do |e|
+          a.collection-item.col.s12
+            p.fixedEvtName
+              = e.name
+            span.fixedEvtDate
+              = e.date.strftime("%A, %d %b %Y %l:%M %p")
 
 #modal1.modal.modal-fixed-footer
   .modal-content

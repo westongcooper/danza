@@ -22,7 +22,7 @@
 
 .schTitle {
   font-family: 'Gotham',sans-serif;
-  font-size: 16vh;
+  font-size: 14vh;
   z-index: 200;
   color: white;
   text-shadow: black 2px 5px 5px !important;
@@ -33,31 +33,35 @@
 #evtDesc{
   color: white;
   font-family: 'GothamThin',sans-serif;
-  font-size: 15px;
+  font-size: .9em;
 
 }
 
 #evtDate {
   color: #a1a1a1;
   font-weight: 300px;
-  font-size: 13px;
+  font-size: .9em;
+
 }
 
 #evtAddress {
   color: #d5d5d5;
   font-weight: 300px;
   font-family: 'Gotham',sans-serif;
-  font-size: 10px;
+  font-size: .7em;
 }
 
-
+.evtName {
+  margin-top: -5px;
+  font-size: 1.2em;
+}
 
 .redBorder{
   border: 2px solid red;
 }
 
-// #schedList{
-//   position: fixed;
-//   top: 90px;
-//   width: 20%;
-// }
+.fixedPin{
+  position: fixed;
+  top: 70px;
+  width: 22%!important;
+}
