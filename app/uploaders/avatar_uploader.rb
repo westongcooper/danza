@@ -30,18 +30,18 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # end
   # process :resize_to_fit => [1200, 800]
   # Create different versions of your uploaded files:
-  version :large_avatar do
-    # returns a 150x150 image
-    process :resize_to_fill => [1200, 800]
-  end
-  version :medium_avatar do
-    # returns a 50x50 image
+  # version :large_avatar do
+  #   # returns a 150x150 image
+  #   process :resize_to_fill => [1200, 800]
+  # end
+  # version :medium_avatar do
+  #   # returns a 50x50 image
     process :resize_to_fill => [500, 500]
-  end
-  version :small_avatar do
-    # returns a 35x35 image
-    process :resize_to_fill => [200, 200]
-  end
+  # end
+  # version :small_avatar do
+  #   # returns a 35x35 image
+  #   process :resize_to_fill => [200, 200]
+  # end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:

@@ -24,6 +24,7 @@ module Casein
 
     def create
       @faculty = Faculty.new faculty_params
+      # binding.pry
       @faculty.avatar = params[:faculty][:avatar]
 
       if @faculty.save
