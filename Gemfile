@@ -34,7 +34,12 @@ gem 'casein'
 # gem 'capistrano-rails', group: :development
 gem 'slim-rails'
 gem 'draper', '~> 1.3'
-gem 'rmagick'
+# gem 'rmagick'
+# for aws cloud storage
+gem 'fog'
+# photo resizing
+gem "mini_magick"
+# file upload solution
 group :development, :test do
   # Call 'byebug' anywhere in thegit code to stop execution and get a debugger console
   gem 'pry'

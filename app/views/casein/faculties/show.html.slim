@@ -1,6 +1,6 @@
 h2
   | View faculty
-= form_for @faculty, :url => casein_faculty_path(@faculty) do |f|
+= form_for @faculty, :url => casein_faculty_path(@faculty), :html => {:multipart => true} do |f|
   = render :partial => 'casein/faculties/form', :locals => { :f => f }
   p.submits
     = link_to 'Cancel', casein_faculties_path, :class => 'btn btn-mini btn-danger'

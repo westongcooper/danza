@@ -1,6 +1,6 @@
 h2
   | Add a new faculty
-= form_for @faculty, :url => casein_faculties_path do |f|
+= form_for @faculty, :url => casein_faculties_path, :html => {:multipart => true} do |f|
   = render :partial => 'casein/faculties/form', :locals => { :f => f }
   p.submits
     = link_to 'Cancel', casein_faculties_path, :class => 'btn btn-mini btn-danger'
