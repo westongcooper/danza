@@ -60,7 +60,13 @@ module Casein
     private
 
       def event_params
-        params.require(:event).permit(:name, :address, :date, :description, :avatar, :caption1)
+        params.require(:event).permit(:name, :address, :date, :description,
+                                      :avatar, :cap1, :cap2, :cap3, :cap4, :cap5,
+                                      :cap6, :cap7, :cap8, :cap9, :cap10, :cap11,
+                                      :cap12, :cap13, :cap14, :cap15, :cap16, :pic1,
+                                      :pic2, :pic3, :pic4, :pic5, :pic6, :pic7,
+                                      :pic8, :pic9, :pic10, :pic11, :pic12, :pic13,
+                                      :pic14, :pic15, :pic16)
       end
 
   end

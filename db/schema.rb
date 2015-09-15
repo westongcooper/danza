@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150913224802) do
+ActiveRecord::Schema.define(version: 20150915012912) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,38 @@ ActiveRecord::Schema.define(version: 20150913224802) do
     t.datetime "updated_at"
     t.string   "avatar"
     t.string   "caption1"
+    t.string   "pic1"
+    t.string   "cap1"
+    t.string   "pic2"
+    t.string   "cap2"
+    t.string   "pic3"
+    t.string   "cap3"
+    t.string   "pic4"
+    t.string   "cap4"
+    t.string   "pic5"
+    t.string   "cap5"
+    t.string   "pic6"
+    t.string   "cap6"
+    t.string   "pic7"
+    t.string   "cap7"
+    t.string   "pic8"
+    t.string   "cap8"
+    t.string   "pic9"
+    t.string   "cap9"
+    t.string   "pic10"
+    t.string   "cap10"
+    t.string   "pic11"
+    t.string   "cap11"
+    t.string   "pic12"
+    t.string   "cap12"
+    t.string   "pic13"
+    t.string   "cap13"
+    t.string   "pic14"
+    t.string   "cap14"
+    t.string   "pic15"
+    t.string   "cap15"
+    t.string   "pic16"
+    t.string   "cap16"
   end
 
   create_table "faculties", force: :cascade do |t|
