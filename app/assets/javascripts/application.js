@@ -23,10 +23,10 @@ function start_js() {
 
 //    Hover for Cards
   $('.card.small').mouseenter(function() {
-    $(this).addClass('redBorder',400);
+    $(this).addClass('redBorder',200);
   });
   $('.card.small').mouseleave(function() {
-    $(this).removeClass('redBorder',400);
+    $(this).removeClass('redBorder',200);
   });
 //    Fixing the Schedule
 

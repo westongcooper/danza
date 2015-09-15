@@ -45,7 +45,6 @@
           = link_to ("#{e.address}"), nil,  id: "modalAddress", class: "modal-action modal-close waves-effect waves-green btn-flat left"
 
           a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
-            / i.fa.fa-times.fa-2x
             | Close
           a.modal-action.modal-close.waves-effect.waves-green.btn-flat href="#!"  Register
 
@@ -55,12 +54,13 @@
         li.collection-header.center EVENTS
         - @events.each_with_index do |e, i|
           = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
-            li
+
+            li.valign-wrapper
               div.col.s8
                 p.fixedEvtName id="pinTitle"
-                    = e.name
+                  = e.name
               div.col.s4
-                p.fixedEvtName id="pinDate"
+                p.fixedEvtName.valign id="pinDate"
                   = e.date.strftime("%m-%e-%y")
 
 
