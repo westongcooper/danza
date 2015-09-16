@@ -4,8 +4,6 @@
 .row.container
   .leadImg.col.12 id="schImg"
     p.schTitle.center
-      |Upcoming
-      br
       |Events
     / .layer1
 
@@ -51,7 +49,7 @@
   .col.l4.m3.hide-on-small-only
     div id="schedList"
       ul.collection.row.with-header
-        li.collection-header.center EVENTS
+        li.collection-header.center UPCOMING EVENTS
         - @events.each_with_index do |e, i|
           = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
 
