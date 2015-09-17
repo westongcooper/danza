@@ -28,6 +28,13 @@ function start_js() {
   $('.card.small').mouseleave(function() {
     $(this).removeClass('redBorder',200);
   });
+
+  $('.img-zoom').mouseenter(function() {
+    $(this).addClass('transition',1000, null );
+  });
+  $('.img-zoom').mouseleave(function() {
+    $(this).removeClass('transition',1000, null );
+  });
 //    Fixing the Schedule
 
   var scrollOffset = $("#schedList").offset().top;
@@ -39,8 +46,6 @@ function start_js() {
           $("#schedList").removeClass("fixedPin");
         }
     });
-
-
 
 
 }
