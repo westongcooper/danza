@@ -1,5 +1,5 @@
 class DanzaController < ApplicationController
-before_action :set_event, only: [:scores, :schedule, :pictures, :landing]
+before_action :set_event, only: [:scores, :schedule, :pictures, :landing, :registration]
 
   def about
     @faculty = Faculty.all
@@ -14,12 +14,13 @@ before_action :set_event, only: [:scores, :schedule, :pictures, :landing]
 
   def pictures
   end
+  
   def landing
-
   end
+
   def registration
-
   end
+
   private
 
   def set_event
