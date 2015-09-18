@@ -75,8 +75,8 @@
       <file leaf-file-name="events_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/casein/events_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94559586">
-              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+            <state vertical-scroll-proportion="1.3513789">
+              <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -85,7 +85,7 @@
       <file leaf-file-name="faculty.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/faculty.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
               <folding />
             </state>
@@ -95,9 +95,14 @@
       <file leaf-file-name="_form.html.slim" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/casein/faculties/_form.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6666665">
+            <state vertical-scroll-proportion="0.0">
               <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-              <folding />
+              <folding>
+                <marker date="1442536129000" expanded="true" signature="0:182" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="7:63" placeholder=".col-lg-4" />
+                <marker date="1442536129000" expanded="true" signature="66:129" placeholder=".col-lg-4" />
+                <marker date="1442536129000" expanded="true" signature="132:182" placeholder=".col-lg-4" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,9 +110,66 @@
       <file leaf-file-name="_form.html.slim" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/casein/events/_form.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="14.185185">
+            <state vertical-scroll-proportion="0.0">
               <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1442536129000" expanded="true" signature="0:117" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="7:59" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="62:117" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="118:243" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="125:182" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="185:243" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="244:313" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="251:313" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="314:436" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="321:381" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="384:436" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="437:559" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="444:504" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="507:559" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="560:682" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="567:627" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="630:682" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="683:805" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="690:750" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="753:805" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="806:928" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="813:873" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="876:928" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="929:1051" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="936:996" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="999:1051" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1052:1174" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="1059:1119" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1122:1174" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1175:1297" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="1182:1242" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1245:1297" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1298:1420" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="1305:1365" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1368:1420" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1421:1545" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="1428:1489" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1492:1545" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1546:1670" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="1553:1614" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1617:1670" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1671:1795" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="1678:1739" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1742:1795" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1796:1920" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="1803:1864" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1867:1920" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1921:2045" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="1928:1989" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="1992:2045" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="2046:2170" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="2053:2114" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="2117:2170" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="2171:2295" placeholder=".row" />
+                <marker date="1442536129000" expanded="true" signature="2178:2239" placeholder=".col-lg-6" />
+                <marker date="1442536129000" expanded="true" signature="2242:2295" placeholder=".col-lg-6" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,7 +177,7 @@
       <file leaf-file-name="new.html.slim" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/casein/faculties/new.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5555556">
+            <state vertical-scroll-proportion="0.0">
               <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
               <folding />
             </state>
@@ -176,8 +238,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -227,7 +289,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="RailsProjectView" proportions="" version="1">
+    <navigator currentView="ColorIdeProjectViewPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -239,6 +301,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="RailsProjectView">
         <subPane>
           <PATH>
@@ -319,6 +382,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ControllersFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Danza" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Danza" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ControllersFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casein" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ControllersSubFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -437,7 +518,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="ColorIdeProjectViewPane">
         <subPane>
           <PATH>
@@ -750,27 +830,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2382104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24546553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22460657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22683705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Routes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24546553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -791,9 +871,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19742489" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Routes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
@@ -998,7 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,7 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,7 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.777778">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1094,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.296296">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1110,7 +1182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.7777777">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,7 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,7 +1202,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/casein/faculties/new.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5555556">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
           <folding />
         </state>
@@ -1172,23 +1242,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/casein/faculties/_form.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
+          <folding>
+            <marker date="1442536129000" expanded="true" signature="0:182" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="7:63" placeholder=".col-lg-4" />
+            <marker date="1442536129000" expanded="true" signature="66:129" placeholder=".col-lg-4" />
+            <marker date="1442536129000" expanded="true" signature="132:182" placeholder=".col-lg-4" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/casein/events/_form.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.185185">
+        <state vertical-scroll-proportion="0.0">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1442536129000" expanded="true" signature="0:117" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="7:59" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="62:117" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="118:243" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="125:182" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="185:243" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="244:313" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="251:313" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="314:436" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="321:381" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="384:436" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="437:559" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="444:504" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="507:559" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="560:682" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="567:627" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="630:682" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="683:805" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="690:750" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="753:805" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="806:928" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="813:873" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="876:928" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="929:1051" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="936:996" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="999:1051" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1052:1174" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="1059:1119" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1122:1174" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1175:1297" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="1182:1242" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1245:1297" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1298:1420" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="1305:1365" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1368:1420" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1421:1545" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="1428:1489" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1492:1545" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1546:1670" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="1553:1614" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1617:1670" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1671:1795" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="1678:1739" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1742:1795" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1796:1920" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="1803:1864" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1867:1920" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1921:2045" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="1928:1989" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="1992:2045" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="2046:2170" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="2053:2114" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="2117:2170" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="2171:2295" placeholder=".row" />
+            <marker date="1442536129000" expanded="true" signature="2178:2239" placeholder=".col-lg-6" />
+            <marker date="1442536129000" expanded="true" signature="2242:2295" placeholder=".col-lg-6" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/faculty.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
           <folding />
         </state>
@@ -1196,8 +1328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/casein/events_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94559586">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        <state vertical-scroll-proportion="1.3513789">
+          <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
           <folding />
         </state>
       </provider>

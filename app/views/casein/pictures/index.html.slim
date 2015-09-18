@@ -1,0 +1,9 @@
+h2
+  | Pictures
+  = casein_pagination_details @pictures
+= render :partial => 'casein/pictures/table', :locals => { :pictures => @pictures }
+.text-center
+  = will_paginate @pictures
+= content_for :sidebar do
+  li
+    = link_to "#{casein_show_icon "plus-sign"}Add a new picture".html_safe, new_casein_picture_path

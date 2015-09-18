@@ -1,0 +1,21 @@
+table.table.table-striped.table-hover.table-condensed
+  thead
+    tr
+      th
+        = casein_sort_link "Event", :event_id
+      th
+        = casein_sort_link "Pic", :pic
+      th
+        = casein_sort_link "Caption", :caption
+      th
+        |  
+  - pictures.each do |picture|
+    tr
+      td
+        = casein_table_cell_link picture.event.name, casein_picture_path(picture)
+      td
+        = casein_table_cell_link picture.pic, casein_picture_path(picture)
+      td
+        = casein_table_cell_link picture.caption, casein_picture_path(picture)
+      td.delete
+        = link_to(casein_show_row_icon("trash"), casein_picture_path(picture), :method => :delete, :data => { :confirm => "Are you sure you want to delete this picture?" })
