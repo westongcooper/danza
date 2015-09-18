@@ -5,7 +5,8 @@ class CreateEvents < ActiveRecord::Migration
       t.string :address
       t.datetime :date
       t.text :description
-      
+      t.string :pdf
+      t.boolean :complete
       t.timestamps
     end
   end
