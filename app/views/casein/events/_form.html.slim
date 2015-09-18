@@ -7,7 +7,14 @@
   .col-lg-6
     = casein_datetime_select f, f.object, :date
   .col-lg-6
-    = casein_text_area f, f.object, :description
+    = casein_datetime_select f, f.object, :endDate
 .row
   .col-lg-6
+    = casein_text_area f, f.object, :description
+  .col-lg-6
     = casein_file_field f, f.object, 'test', :avatar
+.row
+  .col-lg-6
+    = casein_file_field f, f.object, 'test', :pdf
+  .col-lg-6
+    = casein_check_box f, f.object, :complete

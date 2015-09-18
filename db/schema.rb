@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20150918011502) do
     t.string   "name"
     t.string   "address"
     t.datetime "date"
+    t.datetime "endDate"
     t.text     "description"
     t.string   "pdf"
     t.boolean  "complete"

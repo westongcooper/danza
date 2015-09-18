@@ -59,7 +59,7 @@ module Casein
     private
 
       def event_params
-        params.require(:event).permit(:name, :address, :date, :description,
+        params.require(:event).permit(:name, :address, :date, :endDate, :pdf, :complete, :description,
                                       :avatar)
       end
 
