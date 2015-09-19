@@ -1,5 +1,7 @@
 class DanzaController < ApplicationController
 before_action :set_event, only: [:scores, :schedule, :pictures, :landing, :registration]
+before_action :set_finished_events, only: [:scores, :pictures, :landing]
+
 
   def about
     @faculty = Faculty.all
@@ -9,12 +11,12 @@ before_action :set_event, only: [:scores, :schedule, :pictures, :landing, :regis
   end
 
   def scores
-    @finishedEvent = Event.where('date < ?', Time.now.beginning_of_day).order("date DESC")
   end
 
   def pictures
+    @pictures = Picture.where(event_id: params[:event_id])
   end
-  
+
   def landing
   end
 
@@ -24,6 +26,10 @@ before_action :set_event, only: [:scores, :schedule, :pictures, :landing, :regis
   private
 
   def set_event
-    @events = Event.where('date >= ?', Time.now.beginning_of_day).order("date")
+    @events = Event.where("complete = false").order("date")
+  end
+
+  def set_finished_events
+    @finishedEvent = Event.where("complete = true").order("date DESC")
   end
 end
