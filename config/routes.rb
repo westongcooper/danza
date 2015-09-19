@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get '/schedule' => 'danza#schedule', as: 'schedule'
   get '/scores' => 'danza#scores', as: 'scores'
   get '/registration' => 'danza#registration', as: 'registration'
+	get '/scores/:event_id/pictures' => 'danza#pictures', as: 'pictures'
+
+
   root 'danza#landing'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
