@@ -27,7 +27,6 @@ module Casein
       @picture = Picture.new picture_params
       @picture.event_id = picture_event_id['id']
       @picture.pic = params[:picture][:pic]
-      binding.pry
       if @picture.save
         flash[:notice] = 'Picture created'
         redirect_to casein_pictures_path
