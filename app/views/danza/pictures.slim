@@ -1,0 +1,9 @@
+h2 PICTURE GALLERY
+
+.row.container.col.s12
+
+  - @pictures.each do |p|
+    .col.s4
+      = image_tag(p.pic, alt: "Continue", :class => "img col s12 materialboxed", :data => {:description => p.caption})
+      p.center
+        = p.caption
