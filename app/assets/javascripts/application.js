@@ -30,10 +30,10 @@ function start_js() {
   });
 
   $('.img-zoom').mouseenter(function() {
-    $(this).addClass('transition',1000, null );
+    $(this).addClass('transition');
   });
   $('.img-zoom').mouseleave(function() {
-    $(this).removeClass('transition',1000, null );
+    $(this).removeClass('transition');
   });
 //    Fixing the Schedule
   if ($("#schedList").length > 0) {
