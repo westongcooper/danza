@@ -36,18 +36,19 @@ function start_js() {
     $(this).removeClass('transition',1000, null );
   });
 //    Fixing the Schedule
+  if ($("#schedList").length > 0) {
+    var scrollOffset = $("#schedList").offset().top;
+      $(window).scroll(function(){
+          var scrollPos = $(window).scrollTop();
+          if (scrollPos >= (scrollOffset)) {
+            $("#schedList").addClass("fixedPin");
+          } else {
+            $("#schedList").removeClass("fixedPin");
+          }
+      });
+  };
 
-  var scrollOffset = $("#schedList").offset().top;
-    $(window).scroll(function(){
-        var scrollPos = $(window).scrollTop();
-        if (scrollPos >= (scrollOffset)) {
-          $("#schedList").addClass("fixedPin");
-        } else {
-          $("#schedList").removeClass("fixedPin");
-        }
-    });
-
-
+  $('.materialboxed').materialbox();
 }
 
 $(document).on('ready page:load', start_js);

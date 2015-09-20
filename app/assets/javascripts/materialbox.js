@@ -246,4 +246,9 @@ $(document).ready(function(){
   $('.materialboxed').materialbox();
 });
 
+// $(document).on('ready page:load', funcion(){
+//     $('.materialboxed').materialbox();
+//   });
+
+
 }( jQuery ));
