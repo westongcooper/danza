@@ -50,11 +50,21 @@ h2{
     letter-spacing: -.5px;
   }
 
-  .regDef{
-    font-family: 'GothamThin',sans-serif;
-    font-size: .6em;
-  }
+.highlights li{
+  list-style-type: disc;
+}
 
-  .regP{
-    font-family: 'GothamThin',sans-serif;
-  }
+.regDef{
+  font-family: 'GothamThin',sans-serif;
+  font-size: .6em;
+}
+
+.regP{
+  font-family: 'GothamThin',sans-serif;
+}
+
+.danZa{
+  font-weight: 500;
+  font-size: 60px;
+  text-shadow: red 0 0 10px;
+}
