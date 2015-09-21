@@ -1,5 +1,5 @@
 class DanzaController < ApplicationController
-before_action :set_event, only: [:scores, :schedule, :pictures, :landing, :registration]
+before_action :set_event, only: [:scores, :schedule, :pictures, :landing, :registration, :about]
 before_action :set_finished_events, only: [:scores, :pictures, :landing]
 
 

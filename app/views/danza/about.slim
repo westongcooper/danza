@@ -8,46 +8,82 @@
           Pour-over scenester sartorial 3 wolf moon blog. Mixtape asymmetrical flannel, gentrify American Apparel small batch pop-up blog semiotics Austin Neutra. Dreamcatcher High Life quinoa, pop-up sartorial kale chips McSweeney's readymade pour-over heirloom cornhole. Lo-fi mlkshk YOLO next level locavore health goth. Neutra semiotics Marfa, street art dreamcatcher post-ironic sustainable Helvetica cliche biodiesel next level irony. Leggings meditation quinoa freegan, occupy beard food truck pour-over cardigan messenger bag bitters Vice jean shorts. Narwhal before they sold out try-hard Godard meditation photo booth.
           Single-origin coffee Banksy bespoke, cray ennui before they sold out organic meh hashtag Truffaut. Tilde semiotics XOXO beard cornhole pop-up. Viral Tumblr actually, +1 pickled Brooklyn biodiesel Kickstarter yr cronut ennui synth keytar Shoreditch. Hashtag chia keffiyeh literally cliche polaroid readymade deep v skateboard whatever authentic. Skateboard beard small batch church-key, kitsch shabby chic YOLO pork belly meditation hella pour-over Bushwick Intelligentsia ethical. Kogi cold-pressed irony cardigan, trust fund PBR&B seitan you probably haven't heard of them authentic tofu ennui sustainable. You probably haven't heard of them Banksy dreamcatcher, street art shabby chic leggings trust fund cornhole 90's.
           Odd Future ennui Echo Park put a bird on it. Cronut lomo XOXO yr tattooed, church-key letterpress Vice Shoreditch. Umami paleo banh mi, actually Odd Future distillery Etsy banjo. Kickstarter cred shabby chic irony normcore, meggings cliche ugh American Apparel deep v kogi fanny pack artisan. Viral organic meh, banh mi McSweeney's dreamcatcher YOLO. Yr kogi hella, stumptown literally shabby chic listicle. Irony hashtag wolf bitters.
-    .col.s12.m4
-      .about_side_content
-        h4
-          |side About pics
-  h2
-    |Faculty
-  .row
-    .col.s12.m4
-      .member_box
-        |faculty member
-    .col.s12.m4
-      .member_box
-        |faculty member
-    .col.s12.m4
-      .member_box
-        |faculty member
-  .row
-    .col.s12.m4
-      .member_box
-        |faculty member
-    .col.s12.m4
-      .member_box
-        |faculty member
-    .col.s12.m4
-      .member_box
-        |faculty member
-  /- @faculty.each do |f|
-  /  .faculty
-  /    h5.full_name
-  /      |Name
-  /    = f.full_name
-  /    h5.bio
-  /      |Bio
-  /    = f.bio
-  /    binding.pry
-  /    = image_tag(f.avatar, alt: 'not working')
-  /    br
+      h2
+        |Faculty
+      .row
+        .col.s12.m4
+          .member_box
+            |faculty member
+        .col.s12.m4
+          .member_box
+            |faculty member
+        .col.s12.m4
+          .member_box
+            |faculty member
+      .row
+        .col.s12.m4
+          .member_box
+            |faculty member
+        .col.s12.m4
+          .member_box
+            |faculty member
+        .col.s12.m4
+          .member_box
+            |faculty member
 
 
-  /- content_for @faculty do | f |
-      = binding.pry
-  /h3
-    /= @faculty.take.to_json
+
+
+    .col.l4.m3.hide-on-small-only
+      div id="schedList"
+        .spacer id="spacerSched"
+          ul.collection.row.with-header
+            li.collection-header.center UPCOMING EVENTS
+            - @events[0..5].each_with_index do |e, i|
+              = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
+
+                li.valign-wrapper
+                  div.col.s8
+                    p.fixedEvtName id="pinTitle"
+                      = e.name
+                  div.col.s4
+                    p.fixedEvtName.valign id="pinDate"
+                      = e.date.strftime("%m-%e-%y")
+                li.center
+                  = link_to "SEE ALL", schedule_path, class: "scheduleLink collection-item"
+
+    - @events[0..5].each_with_index do |e, i|
+      = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+1}"])
+        .modal-content
+          / h4.modalTit.grey-text.text-darken-4 Title
+          = content_tag(:h4, e.name ,class: ["modalTit", "grey-text", "text-darken-4"])
+          = content_tag(:h5, e.date.strftime("%A, %d %b %Y %l:%M %p") ,class: ["grey-text", "text-darken-1"])
+          / p.grey-text.text-darken-2 NEEED TO ADD THE INFO BUT NOT SURE HOW TO PUT THE CORRECT INFOR HERE.....
+          = content_tag(:p, e.description ,class: ["grey-text", "text-darken-2"])
+          = image_tag(e.avatar, alt: "Continue", class: ["modalImg", "col", "s12", "center"])
+        .modal-footer
+          = link_to ("#{e.address}"), nil,  id: "modalAddress", class: "modal-action modal-close waves-effect waves-green btn-flat left"
+
+          a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
+            | Close
+          a.modal-action.modal-close.waves-effect.waves-green.btn-flat href="#!"  Register
+
+
+
+    /- @faculty.each do |f|
+    /  .faculty
+    /    h5.full_name
+    /      |Name
+    /    = f.full_name
+    /    h5.bio
+    /      |Bio
+    /    = f.bio
+    /    binding.pry
+    /    = image_tag(f.avatar, alt: 'not working')
+    /    br
+
+
+    /- content_for @faculty do | f |
+        / = binding.pry
+    /h3
+      /= @faculty.take.to_json
