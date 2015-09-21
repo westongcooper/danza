@@ -11,25 +11,34 @@
       h2
         |Faculty
       .row
-        .col.s12.m4
-          .member_box
-            |faculty member
-        .col.s12.m4
-          .member_box
-            |faculty member
-        .col.s12.m4
-          .member_box
-            |faculty member
-      .row
-        .col.s12.m4
-          .member_box
-            |faculty member
-        .col.s12.m4
-          .member_box
-            |faculty member
-        .col.s12.m4
-          .member_box
-            |faculty member
+        - @faculty.each do |f|
+          .col.s12.m6
+            / .member_box.center
+            /   p.FacName.center.s12.col
+            /     = f.full_name
+            /   = image_tag(f.avatar, alt: "Continue", class: ["col", "s12", "center"])
+            /   p.FacBio.center.s12.col
+            /     = f.bio
+            .card
+              .card-image.facImg
+                = image_tag(f.avatar, alt: "Continue", class: ["activator"])
+              .card-content
+                span.card-title.activator.grey-text.text-darken-4
+                  = f.full_name
+                  i.material-icons.right more_vert
+              .card-reveal.activator
+                span.card-title.grey-text.text-darken-4.activator
+                  = f.full_name
+                  i.material-icons.right close
+                p.activator
+                  = f.bio
+
+
+
+
+
+
+
 
 
 
@@ -67,23 +76,3 @@
           a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
             | Close
           a.modal-action.modal-close.waves-effect.waves-green.btn-flat href="#!"  Register
-
-
-
-    /- @faculty.each do |f|
-    /  .faculty
-    /    h5.full_name
-    /      |Name
-    /    = f.full_name
-    /    h5.bio
-    /      |Bio
-    /    = f.bio
-    /    binding.pry
-    /    = image_tag(f.avatar, alt: 'not working')
-    /    br
-
-
-    /- content_for @faculty do | f |
-        / = binding.pry
-    /h3
-      /= @faculty.take.to_json

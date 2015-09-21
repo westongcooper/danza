@@ -100,6 +100,16 @@
     transform: scale(1.1);
 }
 
+.card-content{
+  height: 40px;
+  padding-top: 0px!important;
+}
+
+.facImg img{
+  cursor: pointer;
+  cursor: hand;
+}
+
 // .scheduleLink{
 //   padding-top: 40px;
 // }
