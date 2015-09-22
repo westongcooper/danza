@@ -32,28 +32,28 @@
 
 #evtDesc{
   color: white;
-  font-family: 'GothamThin',sans-serif;
-  font-size: 1.1em;
+  font-family: 'Gotham',sans-serif;
+  font-size: 0.8rem;
 
 }
 
 #evtDate {
   color: #a1a1a1;
-  font-weight: 300px;
-  font-size: .9em;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 #evtAddress {
   color: #d5d5d5;
   font-weight: 300px;
   font-family: 'Gotham',sans-serif;
-  font-size: .7em;
+  font-size: 1rem;
   padding-top: 10px;
 }
 
 .evtName {
   margin-top: -5px;
-  font-size: .9em;
+  font-size: 1.75rem;
 }
 
 .collection-header{
@@ -73,21 +73,21 @@
 
 #pinItem p{
   color: black;
-  font-family: 'GothamThin',sans-serif;
+  font-family: 'Gotham',sans-serif;
 }
 
 #pinItem:hover #pinTitle{
   color: red;
-  font-family: 'GothamThin',sans-serif;
+  font-family: 'Gotham',sans-serif;
 }
 #pinItem:hover #pinDate{
   color: red;
-  font-family: 'GothamThin',sans-serif;
+  font-family: 'Gotham',sans-serif;
 }
-.modalImg{
-  max-height: 32vw;
-  width: auto!important;
-}
+// .modalImg{
+//   max-height: 32vw;
+//   width: auto!important;
+// }
 #spacerSched{
   // overflow: scroll;
 }
@@ -102,7 +102,7 @@
 
 .card-content{
   height: 40px;
-  padding-top: 0px!important;
+  padding:14px;
 }
 
 .facImg img{
@@ -110,6 +110,20 @@
   cursor: hand;
 }
 
+.eventCard{
+  padding:0 !important;
+}
+.infobox{
+  padding:0 !important;
+  height:130px
+}
+.right_date{
+  padding:0 !important;
+}
+.modalImg{
+  padding:0 !important;
+  width:100%;
+}
 // .scheduleLink{
 //   padding-top: 40px;
 // }
