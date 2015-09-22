@@ -62,8 +62,8 @@
         .spacer id="spacerSched"
           ul.collection.row.with-header
             li.collection-header.center UPCOMING EVENTS
-            - @finishedEvent[0..5].each_with_index do |e, i|
-              = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
+            - @events[0..5].each_with_index do |e, i|
+              = link_to ("#modal#{i+200}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
 
                 li.valign-wrapper
                   div.col.s8
@@ -72,5 +72,22 @@
                   div.col.s4
                     p.fixedEvtName.valign id="pinDate"
                       = e.date.strftime("%m-%e-%y")
+              = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+200}"])
+                .modal-content
+                  / h4.modalTit.grey-text.text-darken-4 Title
+                  = content_tag(:h4, e.name ,class: ["modalTit", "grey-text", "text-darken-4"])
+                  = content_tag(:h5, e.date.strftime("%A, %d %b %Y %l:%M %p") ,class: ["grey-text", "text-darken-1"])
+                  / p.grey-text.text-darken-2 NEEED TO ADD THE INFO BUT NOT SURE HOW TO PUT THE CORRECT INFOR HERE.....
+                  = content_tag(:p, e.description ,class: ["grey-text", "text-darken-2"])
+                  / br
+                  / .col.s12.m6.l6.row
+                  /   = link_to "VIEW SCORES", nil,  id: "modalAddress", class: "red-text text-darken-3 modalLinks center col s6"
+                  /   = link_to "VIEW GALLERY", nil,  id: "modalAddress", class: "red-text text-darken-3 modalLinks center col s6"
+
+                .modal-footer
+                  = link_to ("SCORES"), e.pdf.url,  id: "modalAddress", class: "modal-action modal-close waves-effect waves-green btn-flat left"
+                  = link_to "GALLERY", pictures_path(e),  id: "modalAddress", class: "modal-action modal-close waves-effect waves-green btn-flat left"
+                  a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
+                    | Close
             li.center
               = link_to "SEE ALL", schedule_path, class: "scheduleLink collection-item"
