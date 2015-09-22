@@ -1,7 +1,32 @@
-h2 Coming Soon
+h2 Register
+.container.row
+  .regBack.s12.l8.m8.col
+    iframe.regFrame.col.s12 allowtransparency="true" frameborder="0" src="https://www.dancebug.com/rf/?ifid=48"
+
+
+  .col.l4.m4.hide-on-small-only
+    div id="schedList"
+      .spacer id="spacerSched"
+        ul.collection.row.with-header
+          li.collection-header.center UPCOMING EVENTS
+          - @events[0..5].each_with_index do |e, i|
+            = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
+
+              li.valign-wrapper
+                div.col.s8
+                  p.fixedEvtName id="pinTitle"
+                    = e.name
+                div.col.s4
+                  p.fixedEvtName.valign id="pinDate"
+                    = e.date.strftime("%m-%e-%y")
+          li.center
+            = link_to "SEE ALL", schedule_path, class: "scheduleLink collection-item"
+
+
+
 
 .registrationInfo.container.row
-  .registrationSection.col.s12.l8.m9
+  .registrationSection.col.s12.l8.m8
     ul.regList
       h4.regHeader GENERAL RULES & REGULATIONS
       li.regP All dancers competing in the DanZa Competition are required to be registered for the DanZa Intensive in their competition city.
@@ -163,22 +188,3 @@ h2 Coming Soon
       p.regP Any full time student age 15 and over can submit their own choreographed piece.  No self- choreographed solos are permitted.  Maximum of three entries per studio.  The highest scoring routine in this category will be the winner provided they achieve a second place or higher. Winners of this award can compete this routine at the National Finals against the other regional Student Choreographer Award winners.
       h5.regHeader Overall High Score Group Zenith Awards
       p.regP The overall highest scoring group routine in each age category will receive a trophy and $75.00 DanZa Dollars to be used towards the National Finals.  This award is called the DanZa Zenith Award for Overall High Scoring Routine in the Prime, Youth and Advanced categories.  Runners up in first and second place in each category will be recognized with a certificate and DanZa Dollars of $25.00 (second place) and $50.00 (first place) to be used towards the National Finals.
-
-
-  .col.l4.m3.hide-on-small-only
-    div id="schedList"
-      .spacer id="spacerSched"
-        ul.collection.row.with-header
-          li.collection-header.center UPCOMING EVENTS
-          - @events[0..5].each_with_index do |e, i|
-            = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
-
-              li.valign-wrapper
-                div.col.s8
-                  p.fixedEvtName id="pinTitle"
-                    = e.name
-                div.col.s4
-                  p.fixedEvtName.valign id="pinDate"
-                    = e.date.strftime("%m-%e-%y")
-          li.center
-            = link_to "SEE ALL", schedule_path, class: "scheduleLink collection-item"

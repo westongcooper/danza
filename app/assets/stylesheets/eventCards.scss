@@ -77,11 +77,11 @@
 }
 
 #pinItem:hover #pinTitle{
-  color: red;
+  color: #D61E16;
   font-family: 'Gotham',sans-serif;
 }
 #pinItem:hover #pinDate{
-  color: red;
+  color: #D61E16;
   font-family: 'Gotham',sans-serif;
 }
 // .modalImg{
@@ -128,6 +128,25 @@
   padding-top: 0!important;
 }
 
+.regBack{
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  // opacity: .7;
+  // background: url("http://download.free-download-web.com/files/2015/02/Carefully-chosen-background-vector-material-dots-flash-of-light.jpg") no-repeat center center fixed;
+  background: url("http://iwallhd.com/stock/gaussian-blur-blurred-background.jpg") no-repeat center center fixed;
+
+  // background: url("http://iwallhd.com/stock/gaussian-blur-blurred-background.jpg") no-repeat center center fixed;
+
+}
+
+.regBack p{
+  color: white;
+}
+
+.regFrame{
+height: 300px;
+}
 // .scheduleLink{
 //   padding-top: 40px;
 // }
