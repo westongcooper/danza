@@ -23,8 +23,8 @@
             .card
               .card-image.facImg
                 = image_tag(f.avatar, alt: "Continue", class: ["activator"])
-              .card-content
-                span.card-title.activator.grey-text.text-darken-4
+              .card-content.facName
+                .card-title.activator.grey-text.text-darken-4
                   = f.full_name
                   i.material-icons.right more_vert
               .card-reveal.activator
