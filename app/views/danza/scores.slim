@@ -62,7 +62,7 @@
         .spacer id="spacerSched"
           ul.collection.row.with-header
             li.collection-header.center UPCOMING EVENTS
-            - @events[0..5].each_with_index do |e, i|
+            - @finishedEvent[0..5].each_with_index do |e, i|
               = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
 
                 li.valign-wrapper
