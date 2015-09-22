@@ -85,9 +85,11 @@
                   /   = link_to "VIEW GALLERY", nil,  id: "modalAddress", class: "red-text text-darken-3 modalLinks center col s6"
 
                 .modal-footer
-                  = link_to ("SCORES"), e.pdf.url,  id: "modalAddress", class: "modal-action modal-close waves-effect waves-green btn-flat left"
-                  = link_to "GALLERY", pictures_path(e),  id: "modalAddress", class: "modal-action modal-close waves-effect waves-green btn-flat left"
+                  = link_to ("#{e.address}"), nil,  id: "modalAddress", class: "modal-action modal-close waves-effect waves-green btn-flat left"
+
                   a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
                     | Close
+                  a.modal-action.modal-close.waves-effect.waves-green.btn-flat href="#!"  Register
+                  
             li.center
               = link_to "SEE ALL", schedule_path, class: "scheduleLink collection-item"
