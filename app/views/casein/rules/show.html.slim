@@ -1,0 +1,10 @@
+h2
+  | View rule
+= form_for @rule, :url => casein_rule_path(@rule) do |f|
+  = render :partial => 'casein/rules/form', :locals => { :f => f }
+  p.submits
+    = link_to 'Cancel', casein_rules_path, :class => 'btn btn-mini btn-danger'
+    = f.submit "Save changes", :class => "btn btn-mini btn-primary"
+= content_for :sidebar do
+  li
+    = link_to "#{casein_show_icon "th-list"}Back to list".html_safe, casein_rules_path

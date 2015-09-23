@@ -1,0 +1,10 @@
+h2
+  | Rules
+  = casein_pagination_details @rules
+= render :partial => 'casein/rules/table', :locals => { :rules => @rules }
+.text-center
+  = will_paginate @rules
+= content_for :sidebar do
+  li
+    - if Rule.count < 1
+      = link_to "#{casein_show_icon "plus-sign"}Add a new rule".html_safe, new_casein_rule_path
