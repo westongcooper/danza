@@ -14,6 +14,12 @@
 
 // ------------------------------
 
+@media (max-width: 600px) {
+  .landingImage {
+     width: 1100px;
+  }
+}
+
 .landing_t{
   position: absolute;
   left: 0;
@@ -27,6 +33,8 @@
   color: #cdcdcd;
 }
 
+.parallax img{
+}
 
 // .nav ul li a{
 //   font-family: 'GothamThin',sans-serif;
@@ -67,12 +75,25 @@ h2{
 .danZa{
   font-weight: 500;
   font-size: 60px;
-  text-shadow: red 0 0 10px;
+  text-shadow: #D61E16 0 0 10px;
 }
 
-.landingImage{
-  height: 600px;
-}
+
+
+.parallax-container {
+      height: "100px;";
+    }
+
+
+
+
 iframe.regFrame.col.s12, .regBack.s12.l8.m8.col{
   height:929px;
+}
+.linksTo{
+  color: #dddddd;
+}
+
+.linksTo:hover {
+  color: #D61E16!important;
 }

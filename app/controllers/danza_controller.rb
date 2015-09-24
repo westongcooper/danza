@@ -37,5 +37,6 @@ before_action :set_finished_events, only: [:scores, :pictures, :landing]
   end
   def set_rules
     @pdf = Rule.all.take
+    @pdfIntensive = Rule.where("intensive = false")
   end
 end

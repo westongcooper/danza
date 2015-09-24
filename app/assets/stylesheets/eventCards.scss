@@ -5,7 +5,10 @@
   margin-top: 64;
   height: 75vh;
   width: 100%;
-  background: url("https://c1.staticflickr.com/9/8386/8594509864_10caebb1ca_b.jpg");
+  // background: url("https://c1.staticflickr.com/9/8386/8594509864_10caebb1ca_b.jpg");
+
+  background: url("http://i296.photobucket.com/albums/mm195/Zlerp/BMR_zpsxzvqi3yi.jpg")no-repeat center center;
+
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: black 0px 5px 5px !important;
@@ -62,7 +65,7 @@
 }
 
 .redBorder{
-  box-shadow: red 0px 0px 10px !important;
+  box-shadow: #D61E16 0px 0px 10px !important;
 }
 
 .fixedPin{
@@ -129,12 +132,24 @@
 }
 
 .regBack{
+  height: 300px;
+  width: 100%;
   overflow: hidden;
-  background-color: white;
-  margin-right: 20px;
-  margin-top:0.5rem;
+  // opacity: .7;
+  // background: url("http://download.free-download-web.com/files/2015/02/Carefully-chosen-background-vector-material-dots-flash-of-light.jpg") no-repeat center center fixed;
+  background: url("http://iwallhd.com/stock/gaussian-blur-blurred-background.jpg") no-repeat center center fixed;
+
+  // background: url("http://iwallhd.com/stock/gaussian-blur-blurred-background.jpg") no-repeat center center fixed;
+
 }
 
+.regBack p{
+  color: white;
+}
+
+.regFrame{
+height: 300px;
+}
 // .scheduleLink{
 //   padding-top: 40px;
 // }
@@ -143,3 +158,40 @@
 //   font-family: 'GothamThin',sans-serif;
 //   color: black;
 // }
+
+
+.rulesRegs{
+  height: 300px;
+  margin-top: 40px;
+  border: #D61E16 solid 3px;
+  width: 100%;
+}
+
+.rulesRegs h5 {
+  color: #D61E16;
+}
+.rulesRegs:hover {
+  // border: #d9d9d9 solid 3px;
+  border: 6px solid #d9d9d9;
+}
+
+.rulesRegs:hover h5{
+  color: #d9d9d9;
+}
+
+
+.center{
+  margin: 0 auto;
+}
+
+
+.nav i:hover{
+  color: #d9d9d9;
+}
+
+.brand-logo:hover{
+  color: #d9d9d9;
+}
+
+.leadImg{
+}

@@ -58,7 +58,12 @@
                       = e.name
                   div.col.s4
                     p.fixedEvtName.valign id="pinDate"
-                      = e.date.strftime("%m-%e-%y")
+                      - if e.date.strftime("%d") == e.endDate.strftime("%d")
+                        = e.date.strftime("%b %d")
+                      - else
+                        = e.date.strftime("%b %d")
+                        = ' - '
+                        = e.endDate.strftime("%d")
             li.center
               = link_to "SEE ALL", schedule_path, class: "scheduleLink collection-item"
 
@@ -76,4 +81,4 @@
 
           a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
             | Close
-          a.modal-action.modal-close.waves-effect.waves-green.btn-flat href="#!"  Register
+          = link_to "Register", registration_path, class: "modal-action modal-close waves-effect waves-green btn-flat"

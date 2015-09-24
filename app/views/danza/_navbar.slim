@@ -16,12 +16,12 @@
           li
             = link_to 'Schedule', schedule_path
           li
-            = link_to "Rules & Regulations", @pdf.rulespdf.url if @pdf
-            / = link_to 'Rules & Regulations', rules_path
+            / = link_to "Rules & Regulations", @pdf.rulespdf.url if @pdf
+            = link_to 'Rules & Regulations', rules_path
           li
             = link_to 'Registration', registration_path
           li
-            = link_to 'Scores', scores_path
+            = link_to 'Results', scores_path
       ul#mobile-demo.side-nav
         li
           = link_to 'Home', root_path
@@ -30,7 +30,9 @@
         li
           = link_to 'Schedule', schedule_path
         li
-          = link_to "Rules & Regulations", @pdf.rulespdf.url if @pdf
+          / = link_to "Rules & Regulations", @pdf.rulespdf.url if @pdf
+          = link_to 'Rules & Regulations', rules_path
+
         li
           = link_to 'Registration', registration_path
         li

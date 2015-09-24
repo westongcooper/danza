@@ -59,7 +59,7 @@ module Casein
     private
 
       def rule_params
-        params.require(:rule).permit(:rulespdf)
+        params.require(:rule).permit(:rulespdf, :intensive)
       end
 
   end
