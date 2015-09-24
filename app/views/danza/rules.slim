@@ -3,9 +3,9 @@
     |Rules & Regulations
   .row.col.s12
     .col.s6
-      - if @pdfIntensive.nil?
+      - if @pdf.nil?
       -else
-        =link_to @pdfIntensive.rulespdf.url do
+        =link_to @pdf.rulespdf.url do
           .valign-wrapper.rulesRegs.hoverable
             h5.valign.center.rulesRegsText
               |DANZA INTENSIVE
@@ -13,9 +13,9 @@
               |RULES & REGULATIONS
 
     .col.s6
-      - if @pdf.nil?
+      - if @pdfIntensive.nil?
       -else
-        = link_to @pdf.rulespdf.url do
+        = link_to @pdfIntensive.rulespdf.url do
           .valign-wrapper.rulesRegs.hoverable
             h5.valign.center.rulesRegsText
               | DANZA COMPETITION
