@@ -8,7 +8,7 @@
 
 .events
   .row.container
-    .col.l8.m9.s12
+    .col.l8.m8.s12
       - if @finishedEvent.count <= 0
         .col.s12.event.grey.darken-4.hoverable id="eventCard"
           h4.center No Scores Available
@@ -57,7 +57,7 @@
 
 
 
-    .col.l4.m3.hide-on-small-only
+    .col.l4.m4.hide-on-small-only
       div id="schedList"
         .spacer id="spacerSched"
           ul.collection.row.with-header
@@ -66,10 +66,10 @@
               = link_to ("#modal#{i+200}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
 
                 li.valign-wrapper
-                  div.col.s8
+                  div.col.s7
                     p.fixedEvtName id="pinTitle"
                       = e.name
-                  div.col.s4
+                  div.col.s5
                     p.fixedEvtName.valign id="pinDate"
                       - if e.date.strftime("%d") == e.endDate.strftime("%d")
                         = e.date.strftime("%b %d")

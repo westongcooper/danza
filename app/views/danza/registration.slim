@@ -13,10 +13,10 @@ h2 Register
             = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
 
               li.valign-wrapper
-                div.col.s8
+                div.col.s7
                   p.fixedEvtName id="pinTitle"
                     = e.name
-                div.col.s4
+                div.col.s5
                   p.fixedEvtName.valign id="pinDate"
                     - if e.date.strftime("%d") == e.endDate.strftime("%d")
                       = e.date.strftime("%b %d")
