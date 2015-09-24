@@ -36,7 +36,9 @@ before_action :set_finished_events, only: [:scores, :pictures, :landing]
     @finishedEvent = Event.where("complete = true").order("date DESC")
   end
   def set_rules
-    @pdf = Rule.all.take
-    @pdfIntensive = Rule.where("intensive = false")
+    # @pdf = Rule.all.take
+    @pdf = Rule.where("intensive = true").take
+
+    @pdfIntensive = Rule.where("intensive = false").take
   end
 end
