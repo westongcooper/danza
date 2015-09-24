@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get '/scores' => 'danza#scores', as: 'scores'
   get '/registration' => 'danza#registration', as: 'registration'
 	get '/scores/:event_id/pictures' => 'danza#pictures', as: 'pictures'
-
+  get '/rules' => 'danza#rules', as: 'rules'
 
   root 'danza#landing'
   # The priority is based upon order of creation: first created -> highest priority.

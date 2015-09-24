@@ -3,7 +3,7 @@
     p.schTitle.center
       |Events
 .row.container
-  .col.l8.m9.s12
+  .col.l8.s12
     - if @events.count <= 0
       .col.s12.event.grey.darken-4.hoverable.eventCard
         h4.center No Upcoming Events
@@ -38,7 +38,7 @@
             a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
               | Close
             a.modal-action.modal-close.waves-effect.waves-green.btn-flat href="#!"  Register
-  .col.l4.m3.hide-on-small-only
+  .col.l4.s12
     div id="schedList"
       ul.collection.row.with-header
         li.collection-header.center UPCOMING EVENTS

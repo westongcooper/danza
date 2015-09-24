@@ -1,5 +1,5 @@
 class DanzaController < ApplicationController
-before_action :set_event, only: [:scores, :schedule, :pictures, :landing, :registration, :about]
+before_action :set_event, :set_rules
 before_action :set_finished_events, only: [:scores, :pictures, :landing]
 
 
@@ -23,6 +23,9 @@ before_action :set_finished_events, only: [:scores, :pictures, :landing]
   def registration
   end
 
+  def rules
+  end
+
   private
 
   def set_event
@@ -31,5 +34,8 @@ before_action :set_finished_events, only: [:scores, :pictures, :landing]
 
   def set_finished_events
     @finishedEvent = Event.where("complete = true").order("date DESC")
+  end
+  def set_rules
+    @pdf = Rule.all.take
   end
 end
