@@ -30,7 +30,7 @@ table.table.table-striped.table-hover.table-condensed
       td
         = casein_table_cell_link event.endDate.strftime("%b %d, %Y %l:%M %p"), casein_event_path(event)
       td
-        = casein_table_cell_link event.description, casein_event_path(event)
+        = casein_table_cell_link (truncate(event.description, length: 100)), casein_event_path(event)
       td
         = casein_table_cell_link event.avatar, casein_event_path(event)
       td
