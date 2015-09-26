@@ -116,9 +116,19 @@
 .eventCard{
   padding:0 !important;
 }
-.infobox{
+.eventname{
   padding:0 !important;
-  height:130px
+  margin-bottom:0 !important;
+  h5{
+    padding: 0 0 0 10px;
+  };
+}
+.card.small{
+  height: 250px !important;
+}
+.card-image img{
+  margin-top: -140px;
+
 }
 .right_date{
   padding:0 !important;
