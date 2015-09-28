@@ -29,7 +29,7 @@
                       = e.endDate.strftime("%d")
                 .col.s12.l6.right
                   p.card_city
-                    |MIAMI
+                    = e.city
         = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+1}"])
           .modal-content
             = content_tag(:h4, e.name ,class: ["modalTit", "grey-text", "text-darken-4"])
@@ -53,16 +53,46 @@
       ul.collection.row.with-header
         li.collection-header.center UPCOMING EVENTS
         - @events.each_with_index do |e, i|
-          = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
-            li.valign-wrapper
-              div.col.s8
-                p.fixedEvtName id="pinTitle"
-                  = e.name
-              div.col.s4.right_date.valign-wrapper
-                p.fixedEvtName.valign id="pinDate"
-                  - if e.date.strftime("%d") == e.endDate.strftime("%d")
-                    = e.date.strftime("%b %d")
-                  - else
-                    = e.date.strftime("%b %d")
-                    = ' - '
-                    = e.endDate.strftime("%d")
+          - case e.color
+            -  when "Red"
+              = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item red lighten-2"
+                li.valign-wrapper.red.lighten-2
+                  div.col.s8
+                    p.fixedEvtName id="pinTitle"
+                      = e.name
+                  div.col.s4.right_date.valign-wrapper
+                    p.fixedEvtName.valign id="pinDate"
+                      - if e.date.strftime("%d") == e.endDate.strftime("%d")
+                        = e.date.strftime("%b %d")
+                      - else
+                        = e.date.strftime("%b %d")
+                        = ' - '
+                        = e.endDate.strftime("%d")
+            -  when "Black"
+              = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item grey darken-3"
+                li.valign-wrapper.grey
+                  div.col.s8
+                    p.fixedEvtName id="pinTitle"
+                      = e.name
+                  div.col.s4.right_date.valign-wrapper
+                    p.fixedEvtName.valign id="pinDate"
+                      - if e.date.strftime("%d") == e.endDate.strftime("%d")
+                        = e.date.strftime("%b %d")
+                      - else
+                        = e.date.strftime("%b %d")
+                        = ' - '
+                        = e.endDate.strftime("%d")
+            - else
+              = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item grey darken-3"
+                li.valign-wrapper.grey.darken-3
+                  div.col.s8
+                    p.fixedEvtName id="pinTitle"
+                      = e.name
+                  div.col.s4.right_date.valign-wrapper
+                    p.fixedEvtName.valign id="pinDate"
+                      - if e.date.strftime("%d") == e.endDate.strftime("%d")
+                        = e.date.strftime("%b %d")
+                      - else
+                        = e.date.strftime("%b %d")
+                        = ' - '
+                        = e.endDate.strftime("%d")

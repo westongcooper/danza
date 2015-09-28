@@ -6,6 +6,8 @@ table.table.table-striped.table-hover.table-condensed
       th
         = casein_sort_link "Address", :address
       th
+        = casein_sort_link "City", :city
+      th
         = casein_sort_link "Date", :date
       th
         = casein_sort_link "End Date", :description
@@ -18,6 +20,9 @@ table.table.table-striped.table-hover.table-condensed
       th
         = casein_sort_link "PDF", :pdf
       th
+        = casein_sort_link "Color", :color
+
+      th
         |  
   - events.each do |event|
     tr
@@ -25,6 +30,10 @@ table.table.table-striped.table-hover.table-condensed
         = casein_table_cell_link event.name, casein_event_path(event)
       td
         = casein_table_cell_link event.address, casein_event_path(event)
+      td
+        = casein_table_cell_link event.city, casein_event_path(event)
+      td
+        = casein_table_cell_link event.avatar, casein_event_path(event)
       td
         = casein_table_cell_link event.date.strftime("%b %d, %Y %l:%M %p"), casein_event_path(event)
       td
@@ -35,6 +44,8 @@ table.table.table-striped.table-hover.table-condensed
         = casein_table_cell_link event.avatar, casein_event_path(event)
       td
         = casein_table_cell_link event.complete, casein_event_path(event)
+      td
+        = casein_table_cell_link event.color, casein_event_path(event)
       td
         = casein_table_cell_link event.pdf, casein_event_path(event)
       td.delete
