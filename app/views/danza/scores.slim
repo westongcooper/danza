@@ -19,7 +19,7 @@
             .card-image id="cardImg"
               = image_tag(e.avatar, alt: "Continue", :class => "img-zoom")
             .card-content
-              .left.col.s12.m5.infobox
+              .left.col.s12.m5.eventname
                 span.card-title.grey-text.text-darken-4
                   h5.white-text.evtName
                     = e.name
@@ -34,7 +34,7 @@
                   = e.address
               .col.s12.m7.right id="evtDesc"
                 p
-                  = truncate( simple_format(e.description.gsub('\s','&nbsp')), length: 310)
+                  = truncate( simple_format(e.description.gsub(':','<span>').gsub(';','</span>')), length: 310)
 
 
         = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+1}"])
