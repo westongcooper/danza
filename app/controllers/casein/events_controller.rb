@@ -60,7 +60,7 @@ module Casein
 
       def event_params
         params.require(:event).permit(:name, :address, :date, :endDate, :pdf, :complete, :description,
-                                      :avatar)
+                                      :avatar, :city, :color)
       end
 
   end

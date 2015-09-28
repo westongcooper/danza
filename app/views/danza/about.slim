@@ -82,3 +82,31 @@
           a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
             | Close
           = link_to "Register", registration_path, class: "modal-action modal-close waves-effect waves-green btn-flat"
+          .row.container
+
+  hr.col.s12
+
+.row.container.s12 id="contactInfo"
+  h2.header.white-text.center-align
+      | CONTACT INFORMATION
+.row.container.col.s12
+  h5.s4.col.center-align
+    |info@danza-dance.com
+  h5.col.s4.center-align
+    | 17870 SW 4th Court
+    br
+    | Pembroke Pines, FL  33029
+  h5.s4.col.center-align
+    |844-423-2692
+.row.container.s12
+  hr
+  - @faculty[0..2].each do |f|
+    .col.s4
+      h6.contactName.center.grey-text.text-lighten-3
+        = f.full_name
+      p.contactTittle.center.grey-text.text-lighten-1
+        = f.tittle
+      p.contactEmail.center.grey-text.text-lighten-1
+        = f.email
+      p.contactPhone.center.grey-text
+        = f.phone

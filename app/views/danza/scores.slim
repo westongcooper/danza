@@ -63,7 +63,7 @@
         ul.collection.row.with-header
           li.collection-header.center UPCOMING EVENTS
           - @events[0..5].each_with_index do |e, i|
-            = link_to ("#modal#{i+200}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
+            = link_to ("#modal#{i+1000}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
 
               li.valign-wrapper
                 div.col.s8
@@ -72,7 +72,7 @@
                 div.col.s4
                   p.fixedEvtName.valign id="pinDate"
                     = e.date.strftime("%m-%e-%y")
-            = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+200}"])
+            = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+1000}"])
               .modal-content
                 / h4.modalTit.grey-text.text-darken-4 Title
                 = content_tag(:h4, e.name ,class: ["modalTit", "grey-text", "text-darken-4"])
