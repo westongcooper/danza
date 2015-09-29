@@ -75,16 +75,16 @@
   width: 22%!important;
 }
 
-#pinItem p{
+.pinItem p{
   color: black;
   font-family: 'Gotham',sans-serif;
 }
 
-#pinItem:hover #pinTitle{
+.pinItem:hover .pinTitle{
   color: #D61E16;
   font-family: 'Gotham',sans-serif;
 }
-#pinItem:hover #pinDate{
+.pinItem:hover .pinDate{
   color: #D61E16;
   font-family: 'Gotham',sans-serif;
 }
@@ -164,7 +164,7 @@
 //   padding-top: 40px;
 // }
 
-// #pinDate {
+// .pinDate {
 //   font-family: 'GothamThin',sans-serif;
 //   color: black;
 // }
@@ -204,4 +204,14 @@
 }
 
 .leadImg{
+}
+
+#schedList ul.collection{
+  border:0px;
+}
+#schedList li{
+  border:0px;
+}
+.pinItem{
+  border-top: 2px solid black;
 }

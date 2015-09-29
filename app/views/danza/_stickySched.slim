@@ -5,13 +5,13 @@
       - events.each_with_index do |e, i|
         - case e.color
           -  when "Red"
-            = link_to ("#modal#{i+10000}"),  id: "pinItem", class: "modal-trigger s12 col collection-item red lighten-2"
+            = link_to ("#modal#{i+10000}"), class: "pinItem modal-trigger s12 col collection-item red lighten-2"
               li.valign-wrapper.red.lighten-2
                 div.col.s8
-                  p.fixedEvtName id="pinTitle"
+                  p.fixedEvtName.pinTitle
                     = e.name
                 div.col.s4.right_date.valign-wrapper
-                  p.fixedEvtName.valign id="pinDate"
+                  p.fixedEvtName.valign.pinDate
                     - if e.date.strftime("%d") == e.endDate.strftime("%d")
                       = e.date.strftime("%b %d")
                     - else
@@ -19,13 +19,13 @@
                       = ' - '
                       = e.endDate.strftime("%d")
           -  when "Black"
-            = link_to ("#modal#{i+10000}"),  id: "pinItem", class: "modal-trigger s12 col collection-item grey darken-3"
+            = link_to ("#modal#{i+10000}"), class: "pinItem modal-trigger s12 col collection-item grey darken-3"
               li.valign-wrapper.grey.darken-3
                 div.col.s8
-                  p.fixedEvtName id="pinTitle"
+                  p.fixedEvtName.pinTitle
                     = e.name
                 div.col.s4.right_date.valign-wrapper
-                  p.fixedEvtName.valign id="pinDate"
+                  p.fixedEvtName.valign.pinDate
                     - if e.date.strftime("%d") == e.endDate.strftime("%d")
                       = e.date.strftime("%b %d")
                     - else
@@ -33,13 +33,13 @@
                       = ' - '
                       = e.endDate.strftime("%d")
           - else
-            = link_to ("#modal#{i+10000}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
+            = link_to ("#modal#{i+10000}"), class: "pinItem modal-trigger s12 col collection-item"
               li.valign-wrapper
                 div.col.s8
-                  p.fixedEvtName id="pinTitle"
+                  p.fixedEvtName.pinTitle
                     = e.name
                 div.col.s4.right_date.valign-wrapper
-                  p.fixedEvtName.valign id="pinDate"
+                  p.fixedEvtName.valign.pinDate
                     - if e.date.strftime("%d") == e.endDate.strftime("%d")
                       = e.date.strftime("%b %d")
                     - else
