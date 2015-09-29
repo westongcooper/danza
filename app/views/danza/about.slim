@@ -1,8 +1,9 @@
 .container
   h2
     |About Page
+
   .row
-    .col.s12.m8.l8
+    .col.s12.m12.l8.left-align
       .About_content
         |Welcome to the inaugural season of DanZa Competition and Intensive!  Dance with flair! A unique dance opportunity that was created to provide a positive dance experience offering competitive dance and master classes taught by our “Z Team” - the best and most respected dance educators in the industry.  Learn the latest and most updated dance styles along with classic technique, in classes geared towards all ages of dancers. DanZa Competition and Intensive have been created to join the dance community in a wonderful dance experience, sharing the talents of our organizational and artistic teams in a fun, exciting, supportive and family dance environment.
       br
@@ -14,6 +15,7 @@
       .row
         - @faculty.each do |f|
           .col.s12.m6
+
             / .member_box.center
             /   p.FacName.center.s12.col
             /     = f.full_name
@@ -33,40 +35,42 @@
                   i.material-icons.right close
                 p.activator
                   = f.bio
-
+                  .col.m4.l4.right-align
     = render partial: "stickySched", locals: {events: @events}
 
 
-  hr.col.s12
 
-.row.container.s12 id="contactInfo"
-  h2.header.white-text.center-align
-      | CONTACT INFORMATION
-.row.container.col.s12
-  h5.s4.col.center-align
-    |info@danza-dance.com
-  h5.col.s4.center-align
-    / | 17870 SW 4th Court
-    / br
-    / | Pembroke Pines, FL  33029
-    = link_to "https://www.google.com/maps?q=%2217870+SW+4th+Court+Pembroke+Pines,+FL+33029%22&bav=on.2,or.r_cp.&bvm=bv.103627116,d.aWw&biw=1423&bih=721&dpr=2&um=1&ie=UTF-8&sa=X&ved=0CAYQ_AUoAWoVChMIwKalzpCbyAIV0hWSCh0QagXl" do
-      p
-        | 17870 SW 4th Court
-        br
-        | Pembroke Pines, FL 33029
+  / hr.col.s12.m8.l8
 
-    end
-  h5.s4.col.center-align
-    |844-423-2692
-.row.container.s12
-  hr
-  - @faculty[0..2].each do |f|
-    .col.s4
-      h6.contactName.center.grey-text.text-lighten-3
-        = f.full_name
-      p.contactTittle.center.grey-text.text-lighten-1
-        = f.tittle
-      p.contactEmail.center.grey-text.text-lighten-1
-        = f.email
-      p.contactPhone.center.grey-text
-        = f.phone
+  .row
+    .col.s12.m12.l8 id="contactInfo"
+
+      h2.header.white-text.center-align
+          | CONTACT INFORMATION
+  .row
+    .col.s12.m12.l8
+      h5.s4.col.center-align
+        |info@danza-dance.com
+      h5.col.s4.center-align
+        = link_to "https://www.google.com/maps?q=%2217870+SW+4th+Court+Pembroke+Pines,+FL+33029%22&bav=on.2,or.r_cp.&bvm=bv.103627116,d.aWw&biw=1423&bih=721&dpr=2&um=1&ie=UTF-8&sa=X&ved=0CAYQ_AUoAWoVChMIwKalzpCbyAIV0hWSCh0QagXl" do
+          p
+            | 17870 SW 4th Court
+            br
+            | Pembroke Pines, FL 33029
+
+
+      .s4.col
+        h5.center-align
+        |844-423-2692
+  .row
+    hr
+    - @faculty[0..2].each do |f|
+      .col.s4
+        h6.contactName.center.grey-text.text-lighten-3
+          = f.full_name
+        p.contactTittle.center.grey-text.text-lighten-1
+          = f.tittle
+        p.contactEmail.center.grey-text.text-lighten-1
+          = f.email
+        p.contactPhone.center.grey-text
+          = f.phone
