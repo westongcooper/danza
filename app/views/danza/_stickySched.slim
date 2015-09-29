@@ -20,7 +20,7 @@
                       = e.endDate.strftime("%d")
           -  when "Black"
             = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item grey darken-3"
-              li.valign-wrapper.grey
+              li.valign-wrapper.grey.darken-3
                 div.col.s8
                   p.fixedEvtName id="pinTitle"
                     = e.name
@@ -33,8 +33,8 @@
                       = ' - '
                       = e.endDate.strftime("%d")
           - else
-            = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item grey darken-3"
-              li.valign-wrapper.grey.darken-3
+            = link_to ("#modal#{i+1}"),  id: "pinItem", class: "modal-trigger s12 col collection-item"
+              li.valign-wrapper
                 div.col.s8
                   p.fixedEvtName id="pinTitle"
                     = e.name
