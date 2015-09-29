@@ -1,4 +1,4 @@
-.col.l4.m12.hide-on-small-only
+.col.l4.m12.right
   div id="schedList"
     ul.collection.row.with-header
       li.collection-header.center UPCOMING EVENTS
@@ -7,44 +7,41 @@
           -  when "Red"
             = link_to ("#modal#{i+10000}"), class: "pinItem modal-trigger s12 col collection-item red lighten-2"
               li.valign-wrapper.red.lighten-2
-                div.col.s8
-                  p.fixedEvtName.pinTitle
-                    = e.name
-                div.col.s4.right_date.valign-wrapper
-                  p.fixedEvtName.valign.pinDate
-                    - if e.date.strftime("%d") == e.endDate.strftime("%d")
-                      = e.date.strftime("%b %d")
+                div.col.s8.red_event
+                  p.card_city
+                    = e.city.gsub(' ','&nbsp;').html_safe
+                  .card_date
+                    - if e.date.strftime("%B&nbsp;%d").html_safe == e.endDate.strftime("%B&nbsp;%d").html_safe
+                      = e.date.strftime("%B&nbsp;%d").html_safe
                     - else
-                      = e.date.strftime("%b %d")
-                      = ' - '
+                      = e.date.strftime("%B&nbsp;%d").html_safe
+                      = '&nbsp;-&nbsp;'.html_safe
                       = e.endDate.strftime("%d")
           -  when "Black"
             = link_to ("#modal#{i+10000}"), class: "pinItem modal-trigger s12 col collection-item grey darken-3"
               li.valign-wrapper.grey.darken-3
-                div.col.s8
-                  p.fixedEvtName.pinTitle
-                    = e.name
-                div.col.s4.right_date.valign-wrapper
-                  p.fixedEvtName.valign.pinDate
-                    - if e.date.strftime("%d") == e.endDate.strftime("%d")
-                      = e.date.strftime("%b %d")
+                div.col.s8.black_event
+                  p.card_city
+                    = e.city.gsub(' ','&nbsp;').html_safe
+                  .card_date
+                    - if e.date.strftime("%B&nbsp;%d").html_safe == e.endDate.strftime("%B&nbsp;%d").html_safe
+                      = e.date.strftime("%B&nbsp;%d").html_safe
                     - else
-                      = e.date.strftime("%b %d")
-                      = ' - '
+                      = e.date.strftime("%B&nbsp;%d").html_safe
+                      = '&nbsp;-&nbsp;'.html_safe
                       = e.endDate.strftime("%d")
           - else
             = link_to ("#modal#{i+10000}"), class: "pinItem modal-trigger s12 col collection-item"
               li.valign-wrapper
-                div.col.s8
-                  p.fixedEvtName.pinTitle
-                    = e.name
-                div.col.s4.right_date.valign-wrapper
-                  p.fixedEvtName.valign.pinDate
-                    - if e.date.strftime("%d") == e.endDate.strftime("%d")
-                      = e.date.strftime("%b %d")
+                div.col.s8.white_event
+                  p.card_city
+                    = e.city.gsub(' ','&nbsp;').html_safe
+                  .card_date
+                    - if e.date.strftime("%B&nbsp;%d").html_safe == e.endDate.strftime("%B&nbsp;%d").html_safe
+                      = e.date.strftime("%B&nbsp;%d").html_safe
                     - else
-                      = e.date.strftime("%b %d")
-                      = ' - '
+                      = e.date.strftime("%B&nbsp;%d").html_safe
+                      = '&nbsp;-&nbsp;'.html_safe
                       = e.endDate.strftime("%d")
 
           = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+10000}"])
