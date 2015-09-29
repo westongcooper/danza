@@ -109,9 +109,10 @@
   padding:14px;
 }
 
-.facImg img{
+.facImg img.activator{
   cursor: pointer;
   cursor: hand;
+  margin-top: 0px;
 }
 
 .eventCard{
