@@ -5,6 +5,8 @@ before_action :set_finished_events, only: [:scores, :pictures, :landing]
 
   def about
     @faculty = Faculty.all
+    @facultyContact =  Faculty.where("contact = true")
+
   end
 
   def schedule
@@ -18,7 +20,6 @@ before_action :set_finished_events, only: [:scores, :pictures, :landing]
   end
 
   def landing
-    @faculty =  Faculty.where("contact = true")
   end
 
   def registration
