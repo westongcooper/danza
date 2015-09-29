@@ -31,7 +31,7 @@
                   = e.address
               .col.s12.m7.right id="evtDesc"
                 p
-                  = truncate( simple_format(e.description.gsub(':','<span>').gsub(';','</span>')), length: 310)
+                  = truncate( simple_format(e.description.gsub(':','<span class="modal_bold">').gsub(';','</span>')), length: 310)
 
 
         = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+1}"])

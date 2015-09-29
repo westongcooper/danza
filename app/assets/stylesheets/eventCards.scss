@@ -217,21 +217,74 @@
   border-top: 2px solid black;
   border-bottom: 0px !important;
 }
-.white_event .card_city{
-  color:black !important;
-  background-color:
-  div{
-  }
-}
-.red_event .card_city{
-  color:black !important;
-  div{
-
-  }
-}
-.black_event .card_city{
+.black_event .card_city,.black_event .card_date,.black_event .event_side_name{
   color:red !important;
-  div{
-    color:black !importants;
+}
+  // .red_event .card_date,  .red_event .card_city,  .red_event .event_side_name{
+  //   color:black !important;
+  // }
+  .red_event{
+    color:black;
   }
+    .red_event:hover{
+    color:#E1291B;
+  }
+  .black_event{
+    color:#E1291B;
+  }
+  #schedList .valign-wrapper.red:hover{
+  background-color:black !important;
+}
+  #schedList .valign-wrapper.grey:hover{
+  background-color:black !important;
+}
+#schedList a.pinItem{
+  padding:0;
+}
+
+#schedList a.pinItem row{
+  display:block;
+  padding:0;
+  margin:0 !important;
+}
+#schedList  .event_side_name{
+  font-size:1.4rem !important;
+}
+#schedList  .side_card_date{
+  font-size:0.9rem !important;
+  display:inline-block;
+  margin-left:10px;
+}
+#schedList  .side_card_city{
+  font-size:1.2rem !important;
+  display:inline-block;
+  margin-bottom:0;
+  margin-left:0;
+  margin-right:0;
+}
+#schedList .collection-header{
+  color:white;
+  font-size:2rem;
+  background-color:#212121;
+  border-bottom:4px solid #E1291B;
+}
+.scheduleLink{
+  color:#E1291B;
+  font-size:2rem;
+  text-decoration: underline;
+}
+
+#schedList{
+  font-family:Gotham, sans-serif;
+}
+.modal-content .modal_bold{
+  text-decoration:underline;
+  font-size:1.3rem;
+}
+.modal_date{
+  font-size:1.4rem;
+}
+.modal_city{
+  font-size:1.6rem;
+  color:black;
 }
