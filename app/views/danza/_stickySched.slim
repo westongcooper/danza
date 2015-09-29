@@ -46,6 +46,7 @@
                       = e.date.strftime("%b %d")
                       = ' - '
                       = e.endDate.strftime("%d")
+
           = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+10000}"])
             .modal-content
               = content_tag(:h4, e.name ,class: ["modalTit", "grey-text", "text-darken-4"])
@@ -63,3 +64,5 @@
               a.modal-action.modal-close.waves-effect.waves-red.btn-flat href="#!"
                 | Close
               = link_to "Register", registration_path, class: "modal-action modal-close waves-effect waves-green btn-flat"
+      li.center
+        = link_to "SEE ALL", schedule_path, class: "scheduleLink collection-item"
