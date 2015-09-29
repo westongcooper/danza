@@ -19,17 +19,16 @@
                   h5.white-text.evtName
                     = e.name
               .row
-                .col.s12.l6
-                  p id="evtDate"
-                    - if e.date.strftime("%B %d") == e.endDate.strftime("%B %d")
-                      = e.date.strftime("%B %d")
-                    - else
-                      = e.date.strftime("%B %d")
-                      = ' - '
-                      = e.endDate.strftime("%d")
-                .col.s12.l6.right
+                .col.s12
                   p.card_city
-                    = e.city
+                    = e.city.gsub(' ','&nbsp;').html_safe
+                    .card_date
+                      - if e.date.strftime("%B&nbsp;%d").html_safe == e.endDate.strftime("%B&nbsp;%d").html_safe
+                        = e.date.strftime("%B&nbsp;%d").html_safe
+                      - else
+                        = e.date.strftime("%B&nbsp;%d").html_safe
+                        = '&nbsp;-&nbsp;'.html_safe
+                        = e.endDate.strftime("%d")
         = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+1}"])
           .modal-content
             = content_tag(:h4, e.name ,class: ["modalTit", "grey-text", "text-darken-4"])

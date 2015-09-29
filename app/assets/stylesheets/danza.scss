@@ -80,8 +80,17 @@ h2{
 
 
 .card_city{
-  text-align:right;
+    color:#E1291B !important;
+    font-size:1.5rem !important;
+    display:inline-block;
 }
+.card_date{
+    margin-left:15px !important;
+    color:#808080 !important;
+    font-size:1.2rem !important;
+    display:inline-block;
+}
+
 .parallax-container {
       height: "100px;";
     }

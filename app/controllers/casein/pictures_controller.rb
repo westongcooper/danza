@@ -15,6 +15,7 @@ module Casein
     def show
       @casein_page_title = 'View picture'
       @picture = Picture.find params[:id]
+      @events = Event.all
     end
 
     def new
