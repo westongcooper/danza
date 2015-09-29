@@ -2,7 +2,7 @@
   div id="schedList"
     ul.row.with-header
       li.collection-header.center UPCOMING EVENTS
-      - events.each_with_index do |e, i|
+      - events[0..4].each_with_index do |e, i|
         - case e.color
           -  when "Red"
             = link_to ("#modal#{i+10000}"), class: "pinItem modal-trigger s12 col collection-item red lighten-2"
