@@ -112,7 +112,14 @@
 .facImg img.activator{
   cursor: pointer;
   cursor: hand;
-  margin-top: 0px;
+  max-height: 250px;
+  max-width: 280px;
+  margin: 0 auto;
+
+
+}
+.facImg{
+  height: 200px;
 }
 
 .eventCard{
@@ -291,9 +298,25 @@
 
 .contactAddress{
   color: #cdcdcd;
-  margin-top: -20px;
 }
 
 .contactAddress:hover{
   color: #ececec;
+}
+
+.contactInfo{
+}
+
+.contactInfo p{
+  font-size: 20px;
+}
+
+
+.contactTitle{
+  margin-top: 40px;
+}
+
+
+.facultyContact{
+  margin-top: 40px;
 }

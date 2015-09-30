@@ -3,32 +3,31 @@
   .row
     .col.s12 id="contactInfo"
 
-      h2.header.white-text.center-align
+      h2.header.white-text.center-align.contactTitle
           | CONTACT INFORMATION
   .row
-    .col.s12
-      h5.s4.col.center-align
+    .col.s12.contactInfo
+      p.s12.m4.l4.col.center-align
         |info@danza-dance.com
-      h5.col.s4.center-align
+      .col.s12.m4.l4.center-align
         = link_to "https://www.google.com/maps?q=%2217870+SW+4th+Court+Pembroke+Pines,+FL+33029%22&bav=on.2,or.r_cp.&bvm=bv.103627116,d.aWw&biw=1423&bih=721&dpr=2&um=1&ie=UTF-8&sa=X&ved=0CAYQ_AUoAWoVChMIwKalzpCbyAIV0hWSCh0QagXl" do
           p.contactAddress
             | 17870 SW 4th Court
             br
             | Pembroke Pines, FL 33029
-
-
-      .s4.col
-        h5.center-align
+      p.center-align.s12.m4.l4.col
         |844-423-2692
   .row
     hr
-    - @facultyContact[0..2].each do |f|
-      .col.s4
-        h6.contactName.center.grey-text.text-lighten-3
-          = f.full_name
-        p.contactTittle.center.grey-text.text-lighten-1
-          = f.tittle
-        p.contactEmail.center.grey-text.text-lighten-1
-          = f.email
-        p.contactPhone.center.grey-text
-          = f.phone
+    .facultyContact
+      - @facultyContact[0..2].each do |f|
+        .col.s12.m4.l4
+          h6.contactName.center.grey-text.text-lighten-3
+            = f.full_name
+          p.contactTittle.center.grey-text.text-lighten-1
+            = f.tittle
+          p.contactEmail.center.grey-text.text-lighten-1
+            = f.email
+          p.contactPhone.center.grey-text
+            = f.phone
+          br
