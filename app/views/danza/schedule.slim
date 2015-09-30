@@ -32,13 +32,13 @@
         = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+1}"])
           .modal-content
             = content_tag(:h4, e.name ,class: ["modalTit", "grey-text", "text-darken-4"])
-            - if e.date.strftime("%d") == e.endDate.strftime("%d")
+            - if e.date.strftime("%b %d") == e.endDate.strftime("%b %d")
               = content_tag(:h5, e.date.strftime("%A, %b %d %Y") ,class: ["grey-text", "text-darken-1"])
             - else
                 h5.modal_city
                   = e.city
                 h5.grey-text.text-darken-1.modal_date
-                  = e.date.strftime("%A, %b %d-")
+                  = e.date.strftime("%b %d-")
                   = e.endDate.strftime("%d %Y")
             = simple_format(e.description.gsub('{','<span class="modal_bold">').gsub('}','</span>'),class: ["grey-text text-darken-2"],sanitize:false)
             = image_tag(e.avatar, alt: "Continue", class: ["modalImg", "col", "s12", "center"])

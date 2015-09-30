@@ -34,7 +34,7 @@
         = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+1}"])
           .modal-content
             = content_tag(:h4, e.name ,class: ["modalTit", "grey-text", "text-darken-4"])
-            = content_tag(:h5, e.date.strftime("%A, %d %b %Y %l:%M %p") ,class: ["grey-text", "text-darken-1"])
+            = content_tag(:h5, e.date.strftime("%d %b %Y %l:%M %p") ,class: ["grey-text", "text-darken-1"])
             = simple_format(e.description, class: "grey-text text-darken-2")
 
           .modal-footer
