@@ -1,6 +1,6 @@
 .container
   h2
-    |About Page
+    |About
 
   .row
     .col.s12.m12.l8.left-align
@@ -15,7 +15,7 @@
       .row
         - @faculty.each do |f|
           .col.s12.m6
-            .card
+            .card.imageCard
               .card-image.facImg
                 = image_tag(f.avatar.url(:faculty).to_s, alt: "Continue", class: ["activator"])
               .card-content.facName
