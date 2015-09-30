@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 		resources :faculties
 		resources :events
   end
+	get '/contact' => 'danza#contact', as: 'contact'
   get '/about' => 'danza#about', as: 'about'
   get '/schedule' => 'danza#schedule', as: 'schedule'
   get '/scores' => 'danza#scores', as: 'scores'
