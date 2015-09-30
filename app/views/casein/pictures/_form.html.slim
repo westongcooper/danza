@@ -4,9 +4,9 @@
 .row
   .col-lg-6
     - if @picture.event
-      = casein_collection_select f, f.object, :event_id, :id, @events, :id, "name",{selected:@picture.event.id, include_blank:'Select Event'}
+      = casein_collection_select f, f.object, :event_id, :id, @events, :id, "name",{selected:@picture.event.id}
     -else
-      = casein_collection_select f, f.object, :event_id, :id, @events, :id, "name",{ include_blank:'Select Event'}
+      = casein_collection_select f, f.object, :event_id, :id, @events, :id, "name"
 
   /= f.casein_collection_select form, obj, object_name, attribute, collection, value_method, text_method, options = {}
   .col-lg-6

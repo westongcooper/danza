@@ -8,19 +8,19 @@ table.table.table-striped.table-hover.table-condensed
       th
         = casein_sort_link "City", :city
       th
-        = casein_sort_link "Date", :date
+        = casein_sort_link "Avatar", :avatar
+      th
+        = casein_sort_link "Start Date", :date
       th
         = casein_sort_link "End Date", :description
       th
         = casein_sort_link "Description", :description
       th
-        = casein_sort_link "Avatar", :avatar
-      th
         = casein_sort_link "Scores Page", :complete
       th
-        = casein_sort_link "PDF", :pdf
-      th
         = casein_sort_link "Color", :color
+      th
+        = casein_sort_link "PDF", :pdf
 
       th
         |  
@@ -40,8 +40,6 @@ table.table.table-striped.table-hover.table-condensed
         = casein_table_cell_link event.endDate.strftime("%b %d, %Y %l:%M %p"), casein_event_path(event)
       td
         = casein_table_cell_link (truncate(event.description, length: 100)), casein_event_path(event)
-      td
-        = casein_table_cell_link event.avatar, casein_event_path(event)
       td
         = casein_table_cell_link event.complete, casein_event_path(event)
       td

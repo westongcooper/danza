@@ -28,6 +28,9 @@ module Casein
       @picture = Picture.new picture_params
       @picture.event_id = picture_event_id['id']
       @picture.pic = params[:picture][:pic]
+      if !picture_params[:caption] || picture_params[:caption].empty?
+        @picture.caption = ' '
+      end
       # binding.pry
       if @picture.save
         flash[:notice] = 'Picture created'
@@ -42,7 +45,9 @@ module Casein
       @casein_page_title = 'Update picture'
       @events = Event.all
       @picture = Picture.find params[:id]
-
+      if picture_params[:caption] && picture_params[:caption].empty?
+        @picture.caption = ' '
+      end
       if @picture.update_attributes picture_params
         flash[:notice] = 'Picture has been updated'
         redirect_to casein_pictures_path
