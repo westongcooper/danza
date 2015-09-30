@@ -16,24 +16,21 @@
             .card-image id="cardImg"
               = image_tag(e.avatar, alt: "Continue", :class => "img-zoom")
             .card-content
-              .left.col.s12.m5.eventname
-                span.card-title.grey-text.text-darken-4
+              .row.eventname
+                .span.card-title.grey-text.text-darken-4
                   h5.white-text.evtName
                     = e.name
-                p id="evtDate"
-                  - if e.date.strftime("%d") == e.endDate.strftime("%d")
-                    = e.date.strftime("%B %d")
-                  - else
-                    = e.date.strftime("%B %d")
-                    = ' - '
-                    = e.endDate.strftime("%d")
-                p id="evtAddress"
-                  = e.address
-              .col.s12.m7.right id="evtDesc"
-                p
-                  = truncate( simple_format(e.description.gsub('{','<span class="modal_bold">').gsub('}','</span>')), length: 310)
-
-
+              .row
+                .col.s12
+                  p.card_city
+                    = e.city.gsub(' ','&nbsp;').html_safe
+                    .card_date
+                      - if e.date.strftime("%B&nbsp;%d").html_safe == e.endDate.strftime("%B&nbsp;%d").html_safe
+                        = e.date.strftime("%B&nbsp;%d,&nbsp;%G").html_safe
+                      - else
+                        = e.date.strftime("%B&nbsp;%d").html_safe
+                        = '&nbsp;-&nbsp;'.html_safe
+                        = e.endDate.strftime("%d,&nbsp;%G").html_safe
         = content_tag(:div, nil ,class: ["modal", "modal-fixed-footer"], id: ["modal#{i+1}"])
           .modal-content
             = content_tag(:h4, e.name ,class: ["modalTit", "grey-text", "text-darken-4"])
