@@ -17,7 +17,7 @@
           .col.s12.m6
             .card
               .card-image.facImg
-                = image_tag(f.avatar, alt: "Continue", class: ["activator"])
+                = image_tag(f.avatar.url(:faculty).to_s, alt: "Continue", class: ["activator"])
               .card-content.facName
                 .card-title.activator.grey-text.text-darken-4
                   = f.full_name
