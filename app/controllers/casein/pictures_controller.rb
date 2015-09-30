@@ -9,7 +9,7 @@ module Casein
 
     def index
       @casein_page_title = 'Pictures'
-  		@pictures = Picture.order(sort_order(:pic)).paginate :page => params[:page]
+      @pictures = Picture.order(sort_order(:pic)).paginate :page => params[:page]
     end
 
     def show
@@ -20,7 +20,7 @@ module Casein
 
     def new
       @casein_page_title = 'Add a new picture'
-    	@picture = Picture.new
+      @picture = Picture.new
       @events = Event.all
     end
 
@@ -40,7 +40,7 @@ module Casein
 
     def update
       @casein_page_title = 'Update picture'
-
+      @events = Event.all
       @picture = Picture.find params[:id]
 
       if @picture.update_attributes picture_params
