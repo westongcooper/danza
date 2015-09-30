@@ -1,6 +1,15 @@
 h2 PICTURE GALLERY
-
-.row.container
-    - @pictures.each_with_index do |p|
-      .col.s12.m6.l4
-        = image_tag(p.pic, alt: "Continue", :class => "img col s12 materialboxed", :data => {caption: p.caption})
+.container.gallery
+  - until @i >= @pictures.count - 1
+    .row
+      .col.s12.m4
+        = image_tag(@pictures[@i].pic, alt: "Continue", :class => "img materialboxed", :data => {caption: @pictures[@i].caption})
+        - @i += 1
+      - unless @i >= @pictures.count - 1
+        .col.s12.m4
+          = image_tag(@pictures[@i].pic, alt: "Continue", :class => "img materialboxed", :data => {caption: @pictures[@i].caption})
+          - @i += 1
+      - unless @i >= @pictures.count - 1
+        .col.s12.m4
+          = image_tag(@pictures[@i].pic, alt: "Continue", :class => "img materialboxed", :data => {caption: @pictures[@i].caption})
+          - @i += 1

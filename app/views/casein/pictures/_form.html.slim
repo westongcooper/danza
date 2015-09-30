@@ -3,7 +3,11 @@
     = casein_file_field f, f.object, 'Picture', :pic
 .row
   .col-lg-6
-    = casein_collection_select f, f.object, :event_id, :id, @events, :id, "name",{selected:@picture.event.id, include_blank:'Select Event'}
+    - if @picture.event
+      = casein_collection_select f, f.object, :event_id, :id, @events, :id, "name",{selected:@picture.event.id, include_blank:'Select Event'}
+    -else
+      = casein_collection_select f, f.object, :event_id, :id, @events, :id, "name",{ include_blank:'Select Event'}
+
   /= f.casein_collection_select form, obj, object_name, attribute, collection, value_method, text_method, options = {}
   .col-lg-6
     = casein_text_field f, f.object, :caption

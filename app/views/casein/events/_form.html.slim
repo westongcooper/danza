@@ -19,7 +19,7 @@
   .col-lg-6
     = casein_file_field f, f.object, 'test', :pdf
 .row
-  .col-lg-6
+  .col-lg-6.complete_well
     = casein_check_box f, f.object, :complete
   .col-lg-6
     = casein_select f, f.object, :color, [ "Red", "Black"], {include_blank:'Select Color'}

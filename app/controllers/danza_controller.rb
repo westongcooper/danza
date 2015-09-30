@@ -17,6 +17,7 @@ before_action :set_finished_events, only: [:scores, :pictures, :landing]
 
   def pictures
     @pictures = Picture.where(event_id: params[:event_id])
+    @i = 0
   end
 
   def landing
