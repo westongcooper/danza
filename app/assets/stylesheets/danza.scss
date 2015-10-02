@@ -116,4 +116,36 @@ iframe.regFrame.col.s12, .regBack.s12.l8.m8.col{
 .card-title i{
   margin-top: 10px;
 }
+.schedcards{
+  max-width:100%
+}
+.eventCard{
+  max-width:100%
+}
+.respond{
+  left:-50%;
+}
 
+// @media screen and (orientation: portrait) {
+//   img.img-zoom { max-width: 90%; }
+// }
+
+// @media screen and (orientation: landscape) {
+//   img.img-zoom { max-height: 90%; }
+// }
+// img.img-zoom:empty {
+//   top: 50%;
+//   left: 50%;
+//   -webkit-transform: translate(-50%, -50%);
+//   -moz-transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+//   -o-transform: translate(-50%, -50%);
+//   transform: translate(-50%, -50%);
+// }
+
+// img.ri {
+//   position: absolute;
+//   max-width: 80%;
+//   top: 10%;
+//   left: 10%;
+// }
