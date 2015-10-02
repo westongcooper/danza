@@ -4,8 +4,8 @@
       li.collection-header.center UPCOMING EVENTS
       - events[0..5].each_with_index do |e, i|
         - if e.color == "Red"
-          = link_to ("#modal#{i+10000}"), class: "pinItem modal-trigger s12 col collection-item red lighten-2"
-            li.valign-wrapper.red.lighten-2
+          = link_to ("#modal#{i+10000}"), class: "pinItem modal-trigger s12 col collection-item red darken-2"
+            li.valign-wrapper.red
               div.col.red_event
                 row.s12.event_side_name
                   = e.name
