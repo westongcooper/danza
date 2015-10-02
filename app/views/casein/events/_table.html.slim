@@ -16,6 +16,8 @@ table.table.table-striped.table-hover.table-condensed
       th
         = casein_sort_link "Description", :description
       th
+        = casein_sort_link "Banner", :banner
+      th
         = casein_sort_link "Scores Page", :complete
       th
         = casein_sort_link "Color", :color
@@ -40,6 +42,8 @@ table.table.table-striped.table-hover.table-condensed
         = casein_table_cell_link event.endDate.strftime("%b %d, %Y %l:%M %p"), casein_event_path(event)
       td
         = casein_table_cell_link (truncate(event.description, length: 100)), casein_event_path(event)
+      td
+        = casein_table_cell_link event.banner, casein_event_path(event)
       td
         = casein_table_cell_link event.complete, casein_event_path(event)
       td

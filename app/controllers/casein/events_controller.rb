@@ -24,6 +24,7 @@ module Casein
 
     def create
       @event = Event.new event_params
+      @event.banner = params[:event][:banner]
       if @event.save
         flash[:notice] = 'Event created'
         # binding.pry
@@ -59,7 +60,7 @@ module Casein
     private
 
       def event_params
-        params.require(:event).permit(:name, :address, :date, :endDate, :pdf, :complete, :description,
+        params.require(:event).permit(:name, :address, :date, :endDate, :pdf, :complete, :description, :banner,
                                       :avatar, :city, :color)
       end
 

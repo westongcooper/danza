@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-class EventPicUploader < CarrierWave::Uploader::Base
+class BannerUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -41,13 +41,8 @@ class EventPicUploader < CarrierWave::Uploader::Base
   # def extension_white_list
   #   %w(jpg jpeg gif png)
   # end
+  process :resize_to_limit => [ 650, 150]
 
-  process :resize_to_limit => [ 900, 600]
-  process :quality => 85
-
-  version :medium do
-    process :quality => 85
-  end
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
   # def filename
