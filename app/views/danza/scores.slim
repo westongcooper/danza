@@ -12,7 +12,7 @@
     - else
       - @finishedEvent.each_with_index do |e, i|
         .card.small.col.s12.event.grey.darken-4.hoverable.eventCard
-          = link_to ("#modal#{i+1}"), class: "waves-effect modal-trigger"
+          = link_to ("#modal#{i+1}"), class: "waves-effect modal-trigger no-z"
             .card-image id="cardImg"
               = image_tag(e.avatar, alt: "Continue", :class => "img-zoom")
             .card-content
