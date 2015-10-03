@@ -125,7 +125,19 @@ iframe.regFrame.col.s12, .regBack.s12.l8.m8.col{
 .respond{
   left:-50%;
 }
-
+.cont{
+  height: auto !important;
+  max-height:150px !important;
+}
+.card.small{
+  height:auto !important;
+}
+.event_stuff{
+  margin-bottom:0 !important;
+}
+.card.small .card-content{
+  height:auto !important;
+}
 // @media screen and (orientation: portrait) {
 //   img.img-zoom { max-width: 90%; }
 // }
