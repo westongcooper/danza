@@ -37,6 +37,7 @@ gem 'draper', '~> 1.3'
 # gem 'rmagick'
 # for aws cloud storage
 gem 'fog'
+# gem 'fog-aws'
 # photo resizing
 gem "mini_magick"
 # file upload solution
