@@ -20,7 +20,7 @@ class BannerUploader < CarrierWave::Uploader::Base
     # ActionController::Base.helpers.asset_path("fallback/" + [version_name, "default.png"].compact.join('_'))
 
     #{}"/images/fallback/" + [version_name, "default.png"].compact.join('_')
-    'default_banner.png' #rails will look at 'app/assets/images/default_avatar.png'
+    'https://i296.photobucket.com/albums/mm195/Zlerp/DefaultDanzaBanner_zpsvknlopxx.jpg' #rails will look at 'app/assets/images/default_avatar.png'
   end
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
