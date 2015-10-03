@@ -6,7 +6,7 @@
   .col.m12.l7.schedcards
     - if @events.count <= 0
       .col.s12.event.grey.darken-4.hoverable.eventCard
-        h4.center No Upcoming Events
+        h4.center.noevents No Upcoming Events
     - else
       - @events.each_with_index do |e, i|
         .card.small.col.s12.event.grey.darken-4.hoverable.eventCard

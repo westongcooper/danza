@@ -8,7 +8,7 @@
   .col.l8.m9.s12
     - if @finishedEvent.count <= 0
       .col.s12.event.grey.darken-4.hoverable id="eventCard"
-        h4.center No Scores Available
+        h4.center.noevents No Scores Available
     - else
       - @finishedEvent.each_with_index do |e, i|
         .card.small.col.s12.event.grey.darken-4.hoverable.eventCard

@@ -3,7 +3,7 @@
 
 #schImg{
   margin-top: 64;
-  height: 75vh;
+  height: 60vh;
   width: 100%;
   // background: url("https://c1.staticflickr.com/9/8386/8594509864_10caebb1ca_b.jpg");
 
@@ -37,7 +37,7 @@
 
 .schTitle {
   font-family: 'Gotham',sans-serif;
-  font-size: 14vh;
+  font-size: 4.5rem;
   z-index: 200;
   color: white;
   text-shadow: black 2px 5px 10px !important;
@@ -179,9 +179,13 @@
   // background: url("http://iwallhd.com/stock/gaussian-blur-blurred-background.jpg") no-repeat center center fixed;
   background-color: #e6e6e6;
   // background: url("http://iwallhd.com/stock/gaussian-blur-blurred-background.jpg") no-repeat center center fixed;
+  padding: 0 !important;
 
 }
 
+iframe{
+  padding: 0 !important
+}
 .regBack p{
   color: white;
 }
