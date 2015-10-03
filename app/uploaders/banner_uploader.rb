@@ -41,7 +41,7 @@ class BannerUploader < CarrierWave::Uploader::Base
   # def extension_white_list
   #   %w(jpg jpeg gif png)
   # end
-  process :resize_to_limit => [ 650, 150]
+  process :resize_to_fit => [ 750, 150]
 
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
