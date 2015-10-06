@@ -94,6 +94,11 @@
   position: fixed;
   top: 70px;
   width: 22%!important;
+  overflow-y: auto;
+}
+.listItems{
+  overflow-y: auto;
+  height: 70vh;
 }
 
 .pinItem p{
