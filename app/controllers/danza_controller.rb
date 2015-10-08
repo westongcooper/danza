@@ -9,6 +9,7 @@ before_action :set_finished_events, only: [:scores, :pictures, :landing]
 
   def contact
     @facultyContact =  Faculty.where("contact = true")
+    @contactAddress = "17870 SW 4th Court Pembroke Pines, FL 33029"
   end
 
   def schedule

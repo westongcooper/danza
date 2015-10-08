@@ -14,6 +14,8 @@
             | 17870 SW 4th Court
             br
             | Pembroke Pines, FL 33029
+        / = link_to ("#{@contactAddress}"), "https://www.google.com/maps/place/#{@contactAddress.gsub(' ', '+')}", class: "contactAddress"
+
       p.center-align.s12.m4.l4.col
         |844-423-2692
   .row
